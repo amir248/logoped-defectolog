@@ -496,6 +496,8 @@ text-align: center;
   line-height: 1.55;
 } */
 section:nth-child(6){
+  width:calc(100% - 10%);
+  max-width: 1920px;
   min-height:400px;
   /* background: #f5f1f0; */
   flex-direction: column;
