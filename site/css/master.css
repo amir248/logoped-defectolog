@@ -353,7 +353,28 @@ text-align: center;
       "g g g g g e e e e"
       "n n n n n e e e e"
       "c c c c c f f f f";
-      min-height: 1931px;
+      min-height: 1331px;
+  }
+  .photo > img:nth-child(6){
+    grid-area: n;
+    width:100%;
+    max-width:373px;
+    height:189px;
+    object-fit: cover;
+  }
+  .photo > img:nth-child(5){
+    grid-area:e;
+    width:100%;
+    max-width:373px;
+    height:570px;
+    object-fit: cover;
+  }
+  .photo > img:nth-child(7){
+    grid-area: f;
+    width:100%;
+    max-width:373px;
+    height:370px;
+    object-fit: cover;
   }
 }
 .photo > img:nth-child(1){
@@ -388,7 +409,6 @@ text-align: center;
   grid-area:e;
   width:100%;
   max-width:373px;
-  height:133px;
   height:670px;
   object-fit: cover;
 }
