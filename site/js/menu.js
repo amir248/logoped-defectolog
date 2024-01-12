@@ -18,7 +18,9 @@ document.querySelector('#menu').addEventListener('click',()=>{
     background:rgba(77,77,77,0.7);
     transition: all 3s ease-out;
     `;
-    newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
+    setTimeout(()=>{
+      newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
+    },200);
     setTimeout(()=>{
       // console.log('oK');
       document.querySelector('#menu > div').style.cssText=`
