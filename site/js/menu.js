@@ -2,7 +2,7 @@ const stateBox={};
 stateBox.countClick=+0;
 document.querySelector('#menu').addEventListener('click',()=>{
   stateBox.countClick++;
-  console.log('menu');
+  // console.log('menu');
   console.log(stateBox.countClick);
   if(stateBox.countClick==1){
     document.querySelector('.lineOne').style.cssText=`rotate:40deg;top:23px;transition: all 1s ease-out;`;
@@ -11,7 +11,7 @@ document.querySelector('#menu').addEventListener('click',()=>{
 
     const newBox=document.createElement('div');
     document.querySelector('#menu').append(newBox);
-    newBox.innerHTML=`<a href="#"><h3>Портфолио</h3></a><a href="#"><h3> Работа</h3></a><a href="#"><h3>Отзывы</h3></a>`;
+    newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
     newBox.style.cssText=`
     display:flex;
     position:relative;
@@ -21,7 +21,7 @@ document.querySelector('#menu').addEventListener('click',()=>{
     transition: all 3s ease-out;
     `;
     setTimeout(()=>{
-      console.log('oK');
+      // console.log('oK');
       document.querySelector('#menu > div').style.cssText=`
       transition: all 3s ease-out;
         height:100vh;
