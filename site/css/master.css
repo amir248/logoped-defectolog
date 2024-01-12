@@ -34,7 +34,7 @@ nav{
   display: inline-block;
 }
 
-nav > ol > li{
+nav > ol > a > li{
   /* width:100%; */
   display:inline-block;
   margin-left:auto;
