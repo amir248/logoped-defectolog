@@ -15,7 +15,7 @@ header{
   justify-content: center;
   align-items: center;
 
-  background: url('http://localhost:3700/logoped-defectolog/site/img/logoped-defectolog.jpg');
+  background: url('/site/img/logoped-defectolog.jpg');
   min-height: 100vh;
   object-fit: cover;
   width:100%;
@@ -177,7 +177,7 @@ section:nth-child(2){
   .img{
     /* height: 30%; */
     display: block;
-    background: url('http://localhost:3700/logoped-defectolog/site/img/logoped-defectolog.jpg');
+    background: url('/site/img/logoped-defectolog.jpg');
     height: 30vh;
 
     display:flex;
@@ -519,7 +519,7 @@ section:nth-child(6) > h2{
 
 }
 .sendMe{
-  background: url('http://localhost:3700/logoped-defectolog/site/img/footer.jpg');
+  background: url('/site/img/footer.jpg');
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -628,6 +628,9 @@ footer > a{
   padding:3%;
   width:100%;
   transition: all 3s ease-out;
+}
+#menu > div > a > h3:hover{
+  background:#ffe9ae;
 }
 #menu > div > a{
   text-decoration: none;

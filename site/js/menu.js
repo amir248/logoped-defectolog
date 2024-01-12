@@ -2,8 +2,7 @@ const stateBox={};
 stateBox.countClick=+0;
 document.querySelector('#menu').addEventListener('click',()=>{
   stateBox.countClick++;
-  // console.log('menu');
-  console.log(stateBox.countClick);
+  // console.log(stateBox.countClick);
   if(stateBox.countClick==1){
     document.querySelector('.lineOne').style.cssText=`rotate:40deg;top:23px;transition: all 1s ease-out;`;
     document.querySelector('.lineTwo').style.cssText=`display:none;transition: all 1s ease-out;`;
@@ -64,7 +63,6 @@ document.querySelector('#menu').addEventListener('click',()=>{
     rotate:-0deg;
     transition: all 1s ease-out;`;
     stateBox.countClick=0;
-    console.log('oK3');
     document.querySelector('#menu > div').style.cssText=`
     height:0;
     display:flex;
