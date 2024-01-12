@@ -431,6 +431,21 @@ section:nth-child(6) > h2{
 .boxMessage{
 
 }
+.sendMe{
+  background: url('http://localhost:3700/logoped-defectolog/site/img/footer.jpg');
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  text-shadow: 1px 1px black;
+  width:100%;
+  min-height: 500px;
+  object-fit:contain ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
 img{
  width:100%;
  max-width: 1920px;
