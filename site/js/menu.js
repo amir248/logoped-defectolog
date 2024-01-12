@@ -24,9 +24,9 @@ document.querySelector('#menu').addEventListener('click',()=>{
       console.log('oK');
       document.querySelector('#menu > div').style.cssText=`
       transition: all 3s ease-out;
-        height:700px;
+        height:100vh;
         display:flex;
-        justify-content:center;
+        justify-content:space-around;
         align-items:center;
         flex-direction:column;
         position:relative;
@@ -68,7 +68,8 @@ document.querySelector('#menu').addEventListener('click',()=>{
     document.querySelector('#menu > div').style.cssText=`
     height:0;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
+
     align-items:center;
     flex-direction:column;
     position:relative;
