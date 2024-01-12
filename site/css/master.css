@@ -621,3 +621,15 @@ footer > a{
   border-radius: 27px;
   font-size:27px;
 }
+/* //#menu > div > a:nth-child(1) > h3 */
+#menu > div > a > h3{
+  background: #ffc11e;
+  border-radius:27px;
+  padding:3%;
+  width:100%;
+  transition: all 3s ease-out;
+}
+#menu > div > a{
+  text-decoration: none;
+  transition: all 3s ease-out;
+}

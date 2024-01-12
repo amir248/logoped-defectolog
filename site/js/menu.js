@@ -11,7 +11,6 @@ document.querySelector('#menu').addEventListener('click',()=>{
 
     const newBox=document.createElement('div');
     document.querySelector('#menu').append(newBox);
-    newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
     newBox.style.cssText=`
     display:flex;
     position:relative;
@@ -20,10 +19,11 @@ document.querySelector('#menu').addEventListener('click',()=>{
     background:rgba(77,77,77,0.7);
     transition: all 3s ease-out;
     `;
+    newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
     setTimeout(()=>{
       // console.log('oK');
       document.querySelector('#menu > div').style.cssText=`
-      transition: all 3s ease-out;
+      transition: all 1s ease-out;
         height:100vh;
         display:flex;
         justify-content:space-around;
@@ -69,17 +69,16 @@ document.querySelector('#menu').addEventListener('click',()=>{
     height:0;
     display:flex;
     justify-content:space-around;
-
     align-items:center;
     flex-direction:column;
     position:relative;
     width:100%;
     background:rgba(0,0,,0.1);
-    transition: all 3s ease-out;
+    transition: all 1s ease-out;
     `;
     setTimeout(()=>{
       document.querySelector('#menu > div').remove();
-    },1400);
+    },700);
   }else{
     console.log('-\_[^-^]_/-');
   }
