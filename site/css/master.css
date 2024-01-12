@@ -296,7 +296,12 @@ section:nth-child(2){
 }
 #portfolio{
   display:grid;
-  width:calc(90% + 15px);
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  justify-self:center;
+  justify-items:center;
+  width:calc(100% - 15px);
   /* max-width:calc(1300px + 2%); */
   background: white;
 }
@@ -312,52 +317,93 @@ section:nth-child(2){
   width:100%;
   margin:3%;
 }
+/* .wrapper {
+  display: grid;
+  max-width: 100%;
+  width:900px;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: 190px;
+  grid-template-areas:
+    "a a b b b c c c c"
+    "d d d e e e e f f"
+    "g g k k k k m m m";
+} */
 .photo{
   width:100%;
   max-width: 1200px;
 text-align: center;
-  min-height: 1431px;
+  min-height: 931px;
+  display: grid;
+
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 190px;
+  grid-template-areas:
+    "a a a b b b c c c"
+    "a a a e e e c c c"
+    "g g g e e e f f f"
+    "n n n e e e f f f";
+}
+@media(max-width:500px){
+  .photo{
+    grid-template-areas:
+      "a a a a a b b b b"
+      "a a a a a e e e e"
+      "g g g g g e e e e"
+      "n n n n n e e e e"
+      "c c c c c f f f f";
+      min-height: 1931px;
+  }
 }
 .photo > img:nth-child(1){
+  grid-area: a;
   width:100%;
   max-width:373px;
-  height:333px;
+  height:353px;
   object-fit: cover;
 }
 .photo > img:nth-child(2){
+  grid-area:b;
   width:100%;
   max-width:373px;
-
+  height:170px;
   object-fit: cover;
 }
 .photo > img:nth-child(3){
+  grid-area: c;
   width:100%;
   max-width:373px;
-
+  height: 353px;
   object-fit: cover;
 }
 .photo > img:nth-child(4){
+  grid-area: g;
   width:100%;
   max-width:373px;
-
+  height:170px;
   object-fit: cover;
 }
 .photo > img:nth-child(5){
+  grid-area:e;
   width:100%;
   max-width:373px;
-  height:333px;
+  height:133px;
+  height:670px;
   object-fit: cover;
 }
 .photo > img:nth-child(6){
+  grid-area: n;
   width:100%;
   max-width:373px;
-  height:333px;
+  height:289px;
   object-fit: cover;
 }
 .photo > img:nth-child(7){
+  grid-area: f;
   width:100%;
   max-width:373px;
-  height:333px;
+  height:480px;
   object-fit: cover;
 }
 #myGroup{
@@ -371,6 +417,7 @@ text-align: center;
   border-radius: 370px;
   margin-top:3%;
   margin-bottom:3%;
+  align-items: center;
 }
 #work{
   min-height:670px;
