@@ -19,7 +19,7 @@ document.querySelector('#menu').addEventListener('click',()=>{
     transition: all 3s ease-out;
     `;
     setTimeout(()=>{
-      newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a>`;
+      newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a><label><h3 onClick="chooseLanguageTwo()">Language </h3></label>`;
     },200);
     setTimeout(()=>{
       // console.log('oK');

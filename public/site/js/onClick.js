@@ -1,0 +1,9 @@
+document.querySelector('#myGroup').addEventListener('click',()=>{
+  location.href='https://vk.com/logospb25';
+});
+document.querySelector('#signUp').addEventListener('click',()=>{
+  location.href='https://wa.clck.bar/+79818517641';
+});
+document.querySelector('#sendMe').addEventListener('click',()=>{
+  location.href='https://vk.com/im?media=&sel=-74937175';
+});

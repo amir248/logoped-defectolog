@@ -1,12 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Логопед дефектолог</title>
+    <link rel=”canonical” href=”https://fonolog.ru/”>
     <meta name="description" content="Коррекция, устранение недостатков речи, прогресс стимуляции. Детям, школьникам как с изолированными речевыми нарушениями, имеющими различные дополнительные трудности в речевом развитии.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site/css/master.css">
-    <link rel="shortcut icon" href="site/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/site/css/master.css">
+    <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
+    <script defer type="text/javascript" src="public/site/js/turnOnEnglish.js"></script>
+    <!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Логопед Татьяна Павловна",
+      "image": "https://fonolog.ru/public/site/img/Pavlovna.jpg",
+      "telephone": "+7 981 851 76 41",
+      "email": "",
+      "priceRange" : "$1 - $1000",
+      "description" : "Speech therapist Tatyana Pavlovna, speech formation and assistance in pronunciation of complex letters.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Петроградского района Санкт-Петербурга",
+        "addressLocality": "Санкт-Петербург",
+        "addressRegion": "Петроградский район",
+        "addressCountry": "Ru"
+      },
+      "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 59.93863,
+              "longitude": 30.31413
+            },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": {
+          "@type": "DayOfWeek",
+          "name": "everyDay"
+        }
+      },
+      "url": "https://fonolog.ru"
+    }
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KEWS2VEMXF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KEWS2VEMXF');
+</script>
+
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -40,6 +86,9 @@
             <a href="#contacts">
               <li>Контакты</li>
             </a>
+            <label>
+              <li onClick="chooseLanguage()">language <input type="checkbox" id="check"></li>
+            </label>
           </ol>
         </nav>
           <div id="menu">
@@ -50,12 +99,13 @@
           </label>
           </div>
         <div class="header">
-          <h1>Детский логопед <br>
+          <h1 id="rus">Детский логопед <br>
 Татьяна Павловна</h1>
-<p>Формирование речи.
-Помощь с произношением сложных для ребенка букв.
-Работаю в Санкт-Петербурге с выездом на дом.</p>
-<button type="button" name="button">Записаться</button>
+<h1 id="eng">Children's speech therapist <br>
+Tatyana Pavlovna</h1>
+<p id="rus">Занимаюсь формированием речи и оказываю помощь в произношении сложных для ребенка букв. Работаю в Питере с выездом на дом, а также удаленно через Zoom, Google Meeting.</p>
+<p id="eng">I am engaged in the formation of speech and provide assistance with the pronunciation of letters that are difficult for a child. I work in St. Petersburg with home visits and also remotely via Zoom, Google meeting.</p>
+<button type="button" name="button" id="signUp">Записаться</button>
         </div>
         <div class="img">
 
@@ -64,109 +114,151 @@
       <article>
         <section>
           <div class="boxOne">
-            <img src="/logoped-defectolog/site/img/Pavlovna.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/jaw.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/img.png" alt="">
+            <picture>
+              <source srcset="public/site/img/Pavlovna.webp" type="image/webp" />
+              <img src="public/site/img/Pavlovna.jpg" alt="логопед дефектолог">
+            </picture>
+            <img src="public/site/img/jaw.jpg" alt="логопед дефектолог">
+            <img src="public/site/img/img.png" alt="логопед дефектолог">
           </div>
           <div class="boxTwo">
             <h2 id="rus">Обо мне</h2>
             <h2 id="eng">About me</h2>
-            <fieldset>
-              <legend>language</legend>
-              <label>
-                <input type="checkbox" name="" value="" id="language">
-                <span>turn on English</span>
-              </label>
-            </fieldset>
-            <p id="eng">Children's speech therapist-defectologist. Tatyana Pavlovna. I am engaged in the formation of speech and provide assistance with the pronunciation of letters that are difficult for a child. I work in St. Petersburg with home visits and also remotely via Zoom, Google meeting. I love my job, my soul is very open to children. I I am a mother of two girls myself, so I canunderstand the child’s psyche and I have an individual approach to each child. I have been working in speech therapy and defectology since 2017. I have a certificate of completion of specialized courses. Higher education in the specialty of teacher-psychologist. What problems can I solvestuttering, speech impairment due to external factors.problems with reading and writing. Incorrect pronunciation of words, underdeveloped speech. Poor development of interhemispheric connections, negativity. Lack of attention, pedagogical neglect. Autism spectrum disorders. Every child with this diagnosis has an attention disorder.therefore, it is very important for them to be able to concentrate. How do I work? The child undergoes diagnostics. We arrange a personal meeting, then I go to your home. We conduct a trial lesson with the child.We agree on a price. Depending on the problem, the complexity of the solution and the duration of the lessons, I set a price</p>
+
+            <p id="rus">Я люблю свою работу, моя душа очень открыта к детям. Я сама мама двух девочек, поэтому понимаю детскую психику и имею индивидуальный подход к каждому ребенку. Работаю в логопедии и дефектологии с 2017 года. Имею сертификат об окончании специализированных курсов. Высшее образование по специальности педагог-психолог. Какие проблемы можно решить? Заикание, нарушение речи вследствие внешних факторов. Проблемы с чтением и письмом. Неправильное произношение слов, неразвитая речь. Плохое развитие межполушарных связей, негативизм. Недостаток внимания, педагогическая запущенность. Расстройства аутистического спектра. У каждого ребенка с таким диагнозом наблюдается нарушение внимания, поэтому для него очень важно уметь концентрироваться. Как мне работать? Ребенок проходит диагностику. Договариваемся о личной встрече, потом я еду к вам домой. Проводим пробное занятие с ребенком.Договариваемся о цене. В зависимости от задачи, сложности решения и продолжительности занятий я назначаю цену</p>
+             <strong id="rus">Индивидуальные занятия. Индивидуальные занятия с каждым ребенком проводятся индивидуально</strong>
+            <p id="eng">I love my job, my soul is very open to children. I I am a mother of two girls myself, so I canunderstand the child’s psyche and I have an individual approach to each child. I have been working in speech therapy and defectology since 2017. I have a certificate of completion of specialized courses. Higher education in the specialty of teacher-psychologist. What problems can I solvestuttering, speech impairment due to external factors.problems with reading and writing. Incorrect pronunciation of words, underdeveloped speech. Poor development of interhemispheric connections, negativity. Lack of attention, pedagogical neglect. Autism spectrum disorders. Every child with this diagnosis has an attention disorder.therefore, it is very important for them to be able to concentrate. How do I work? The child undergoes diagnostics. We arrange a personal meeting, then I go to your home. We conduct a trial lesson with the child.We agree on a price. Depending on the problem, the complexity of the solution and the duration of the lessons, I set a price</p>
             <strong id="eng">Individual lessons. Individual lessons with each child are held individually</strong>
-            <p id="rus">Я люблю свою работу, моя душа очень открыта к детям. Я сама мама двоих девочек, поэтому могу понять детскую психику и к каждому ребёнку у меня находится индивидуальный подход.</p>
+
+
             <ul id="rus">
               <li>Работаю в логопедии с 2017 года</li>
               <li>Имеется сертификат о прохождении специализированных курсов</li>
               <li>Высшее образование по специальности педагог-психолог.</li>
               <li>Работаю в коррекционной школе Петроградского района Санкт-Петербурга</li>
             </ul>
-          </div>
+
+             <ul id="eng">
+               <li>I have been working in speech therapy since 2017</li>
+               <li>There is a certificate of completion of specialized courses</li>
+               <li>Higher education with a degree in educational psychology.</li>
+               <li>I work in a correctional school in the Petrogradsky district of St. Petersburg</li>
+             </ul>
+             </div>
         </section>
         <section>
           <div class="boxSolution">
+            <h2 id="rus">Какие проблемы я помогу решить</h2>
+            <h2 id="eng">What problems will I help solve</h2>
 
-            <h2>Какие проблемы я помогу решить</h2>
-            <p>Это самые распространенные сложности, с которыми сталкиваются мои клиенты</p>
+            <p id="rus">Это самые распространенные сложности, с которыми сталкиваются мои клиенты</p>
+            <p id="eng">These are the most common difficulties my clients encounter</p>
             <div class="inside">
-              <ul>
+              <ul id="rus">
                 <li>Заикание, нарушение речи вследствии воздействия внешних факторов</li>
                 <li>Неправильное произношение слов, недоразвитая речь</li>
                 <li>Недостаток внимания, педагогическая запущенность</li>
               </ul>
-              <ul>
+              <ul id="eng">
+                 <li>Stuttering, speech impairment due to external factors</li>
+                 <li>Incorrect pronunciation of words, underdeveloped speech</li>
+                 <li>Lack of attention, pedagogical neglect</li>
+               </ul>
+               <ul id="eng">
+                 <li>Problems with reading and writing</li>
+                 <li>Poor development of interhemispheric connections, negativism</li>
+                 <li>Autism spectrum disorders</li>
+               </ul>
+              <ul id="rus">
                 <li>Проблемы с чтением и письмом</li>
                 <li>Плохое развитие межполушарных связей, негативизм</li>
                 <li>Расстройства аутистического спектра</li>
               </ul>
-
             </div>
           </div>
         </section>
         <section>
           <div class="boxOneTwo">
-            <p>В своей работе с детьми аутического спектра я использую балансборд.</p>
-            <p>У каждого ребёнка с таким диагнозом есть рассторойство внимания, поэтому им очень важно уметь концентрироваться.</p>
-            <p>Бланасборд способствует налаживанию координации и концентрации внимания. Так же, благодаря дополнительным занятиям с бордом, ребёнку будет проще поставить выговаривание шипяще-свистящих звуков.</p>
+            <p id="rus">В своей работе с детьми аутического спектра я использую балансборд.</p>
+            <p id="rus">У каждого ребёнка с таким диагнозом есть рассторойство внимания, поэтому им очень важно уметь концентрироваться.</p>
+            <p id="rus">Бланасборд способствует налаживанию координации и концентрации внимания. Так же, благодаря дополнительным занятиям с бордом, ребёнку будет проще поставить выговаривание шипяще-свистящих звуков.</p>
+
+            <p id="eng">In my work with children on the autism spectrum, I use a balance board.</p>
+             <p id="eng">Every child with this diagnosis has an attention disorder, so it is very important for them to be able to concentrate.</p>
+             <p id="eng">Blanasboard helps improve coordination and concentration. Also, thanks to additional lessons with the board, it will be easier for the child to pronounce hissing and whistling sounds.</p>
           </div>
           <div class="boxTwoTwo">
-            <img src="/logoped-defectolog/site/img/boy.jpg" alt="">
+            <picture>
+              <source srcset="public/site/img/boy.webp" type="image/webp" />
+              <img src="public/site/img/boy.jpg" alt="детский логопед">
+            </picture>
           </div>
         </section>
         <div id="portfolio">
-          <h2>Как проходят наши занятия</h2>
-          <p>Подробнее с процессом работы можно ознакомится в моей группе вконтакте</p>
+          <h2 id="rus">Как проходят наши занятия</h2>
+          <p id="rus">Подробнее с процессом работы можно ознакомится в моей группе вконтакте</p>
+          <h2 id="eng">How our classes are conducted</h2>
+           <p id="eng">More details about the work process can be found in my VKontakte group</p>
           <div class="photo">
-            <img src="/logoped-defectolog/site/img/one.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/two.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/three.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/four.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/five.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/six.jpg" alt="">
-            <img src="/logoped-defectolog/site/img/seven.jpg" alt="">
+            <img src="public/site/img/one.webp" alt="частный логопед">
+            <img src="public/site/img/two.webp" alt="частный логопед">
+            <img src="public/site/img/three.webp" alt="частный логопед">
+            <img src="public/site/img/four.webp" alt="частный логопед">
+            <img src="public/site/img/five.webp" alt="частный логопед">
+            <img src="public/site/img/six.webp" alt="частный логопед">
+            <img src="public/site/img/seven.webp" alt="частный логопед">
           </div>
           <button type="button" name="button" id="myGroup">Моя группа вк</button>
         </div>
         <section id="work">
-          <h2>Как я работаю</h2>
+          <h2 id="rus">Как я работаю</h2>
+          <h2 id="eng">How I work</h2>
           <div>
             <div class="boxDiv">
               <p class="cirle">1</p>
-              <h3>Ребёнок проходит диагностику</h3>
-              <p>Мы договариваемся о личной встрече, затем я выезжаю к вам на дом. Мы проводим пробное занятие с ребёнком.</p>
+              <h3 id="rus">Ребёнок проходит диагностику</h3>
+              <p id="rus">Мы договариваемся о личной встрече, затем я выезжаю к вам на дом. Мы проводим пробное занятие с ребёнком.</p>
+              <h3 id="eng">The child is undergoing diagnostics</h3>
+               <p id="eng">We agree on a personal meeting, then I go to your home. We conduct a trial lesson with the child.</p>
             </div>
             <div class="boxDiv">
               <p class="cirle">2</p>
-              <h3>Договариваемся о цене</h3>
-              <p>В зависимости от проблемы, сложности ее решения и длительности занятий, я выставляю цену.</p>
+              <h3 id="rus">Договариваемся о цене</h3>
+              <p id="rus">В зависимости от проблемы, сложности ее решения и длительности занятий, я выставляю цену.</p>
+              <h3 id="eng">Agree on a price</h3>
+               <p id="eng">Depending on the problem, the complexity of its solution and the duration of the lessons, I set a price.</p>
             </div>
             <div class="boxDiv">
               <p class="cirle">3</p>
-              <h3>Индивидуальные занятия</h3>
-              <p>Занятия проходят с каждым ребенком индивидуально.</p>
+              <h3 id="rus">Индивидуальные занятия</h3>
+              <p id="rus">Занятия проходят с каждым ребенком индивидуально.</p>
+              <h3 id="eng">Individual lessons</h3>
+               <p id="eng">Classes are held individually with each child.</p>
             </div>
           </div>
         </section>
         <section>
-          <h2>Отзывы клиетнов</h2>
-
+          <h2 id="rus">Отзывы клиетнов</h2>
+<h2 id="eng">Customer reviews</h2>
           <div class="boxMessage">
-            <p>Занимались с Татьяной Павловной 4 месяца. Результат видно на лицо! Контакт с ребенком был найден сразу. Благодарна за проделанную работу!</p>
+            <img src="public/site/img/iconFace/one.webp" alt="Отзывы работы логопеда">
+            <p id="rus">Занимались с Татьяной Павловной 4 месяца. Результат видно на лицо! Контакт с ребенком был найден сразу. Благодарна за проделанную работу!</p>
+            <p id="eng">We studied with Tatyana Pavlovna for 4 months. The result is visible! Contact with the child was found immediately. Thank you for the work done!</p>
           </div>
           <div class="boxMessage">
-            <p>Хочу поблагодарить Татьяну Павловну за результат ее работы. Ребёнок стал более четко произносить звуки, которые либо плохо произносились, либо отсутствовали.</p>
+            <p id="rus">Хочу поблагодарить Татьяну Павловну за результат ее работы. Ребёнок стал более четко произносить звуки, которые либо плохо произносились, либо отсутствовали.</p>
+            <p id="eng">I would like to thank Tatyana Pavlovna for the result of her work. The child began to more clearly pronounce sounds that were either poorly pronounced or absent.</p>
+            <img src="public/site/img/iconFace/three.webp" alt="Отзывы работы логопеда">
           </div>
           <div class="boxMessage">
-            <p>Очень хороший логопед. Быстро нашла подход к моему непоседе. Занимались в игровой форме. Результат очень порадовал. Спасибо большое!</p>
+            <img src="public/site/img/iconFace/two.webp" alt="Отзывы работы логопеда">
+            <p id="rus">Очень хороший логопед. Быстро нашла подход к моему непоседе. Занимались в игровой форме. Результат очень порадовал. Спасибо большое!</p>
+            <p id="eng">Very good speech therapist. She quickly found an approach to my fidget. We practiced in a playful way. I was very pleased with the result. Thank you very much!</p>
           </div>
           <div class="boxMessage">
-            <p>Прекрасный логопед Татьяна помогла моей дочке исправить деффекты в речи. Очень интересные и разнообразные занятия. Спасибо вам за вашу любовь к детям. Дочка вас часто вспоминает. </p>
+            <p id="rus">Прекрасный логопед Татьяна помогла моей дочке исправить деффекты в речи. Очень интересные и разнообразные занятия. Спасибо вам за вашу любовь к детям. Дочка вас часто вспоминает. </p>
+            <p id="eng">The wonderful speech therapist Tatyana helped my daughter correct her speech defects. Very interesting and varied activities. Thank you for your love for children. My daughter remembers you often. </p>
+            <img src="public/site/img/iconFace/four.webp" alt="Отзывы работы логопеда">
           </div>
         </section>
         <section>
@@ -189,20 +281,23 @@
           </div>
         </section>
         <section class="sendMe">
-          <h2>Свяжитесь со мной!</h2>
-          <p>Опишите свою проблему. Через некоторое время я отвечу и мы обсудим все, что вас интересует.</p>
+          <h2 id="rus">Свяжитесь со мной!</h2>
+          <p id="rus">Опишите свою проблему. Через некоторое время я отвечу и мы обсудим все, что вас интересует.</p>
+          <h2 id="eng">Contact me!</h2>
+           <p id="eng">Describe your problem. After a while I will answer and we will discuss everything that interests you.</p>
           <button type="button" name="button" id="sendMe">Написать</button>
           <!-- <img src="http://localhost:3700/logoped-defectolog/site/img/footer.jpg" alt=""> -->
         </section>
       </article>
       <footer id="contacts">
-        <h2>Контакты</h2>
-        <span>Телефон: <a href="tel:+7989 361 98 13">+7989 361 98 13</a> <br> <a href="tel:+7 981 851 76 41">+7 981 851 76 41</a> </span>
+        <h2 id="rus">Контакты</h2>
+        <h2 id="eng">Contacts</h2>
+        <span id="rus">Телефон: <a href="tel:+7989 361 98 13">+7989 361 98 13</a> <br> <a href="tel:+7 981 851 76 41">+7 981 851 76 41</a> </span>
+        <span id="eng">Phone: <a href="tel:+7989 361 98 13">+7989 361 98 13</a> <br> <a href="tel:+7 981 851 76 41" >+7 981 851 76 41</a> </span>
       </footer>
     </main>
-    <script type="text/javascript" src="site/js/menu.js"></script>
-    <script type="text/javascript" src="site/js/video.js"></script>
-    <script type="text/javascript" src="site/js/onClick.js"></script>
-    <script type="text/javascript" src="site/js/turnOnEnglish.js"></script>
+    <script type="text/javascript" src="public/site/js/menu.js"></script>
+    <script type="text/javascript" src="public/site/js/video.js"></script>
+    <script type="text/javascript" src="public/site/js/onClick.js"></script>
   </body>
 </html>
