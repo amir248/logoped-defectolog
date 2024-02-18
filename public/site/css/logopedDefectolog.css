@@ -1,0 +1,18 @@
+:root{
+  --width:100%;
+  --maxWidth:900px;
+}
+body{
+  margin-left: auto;
+  margin-right: auto;
+  width:var(--maxWidth);
+  max-width:var(--width);
+}
+main{
+  max-width:var(--maxWidth);
+  width:var(--width);
+  background: #f5f1f0;
+}
+article > p{
+  margin:1%;
+}
