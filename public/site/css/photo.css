@@ -13,4 +13,5 @@ main > img{
   width:900px;
   height:900px;
   object-fit:contain;
+  max-width:100%
 }
