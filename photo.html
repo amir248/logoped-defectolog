@@ -13,6 +13,10 @@
     <main>
       <h1>Photo</h1>
       <img src="photo/1.jpeg" id="img" alt="Tatjana">
+      <div class="arrows">
+        <p class='left'><</p>
+        <p class='right'>></p>
+      </div>
     </main>
   </body>
   <script type="text/javascript">
@@ -25,6 +29,25 @@
       }else{
         i=0;
       }
-    })
+    });
+    document.querySelector('.left').addEventListener('click',()=>{
+      console.log('left');
+
+        i--;
+        if(i>0){
+          document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
+        }else{
+          i=countPhoto.length;
+        }
+    });
+    document.querySelector('.right').addEventListener('click',()=>{
+      console.log('right');
+      i++;
+      if(i<countPhoto.length){
+        document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
+      }else{
+        i=0;
+      }
+    });
   </script>
 </html>
