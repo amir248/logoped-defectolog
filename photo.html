@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Natalia</title>
+    <link rel=”canonical” href=”https://fonolog.ru/”>
+    <meta name="description" content="photo portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/site/css/photo.css">
+    <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1>Photo</h1>
+      <img src="photo/1.jpeg" id="img" alt="Natalia">
+    </main>
+  </body>
+  <script type="text/javascript">
+    let countPhoto=['1.jpeg','2.jpeg','3.jpeg','4.jpeg'];
+    let i=+0;
+    document.querySelector('#img').addEventListener('click',()=>{
+      i++;
+      if(i<countPhoto.length){
+        document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
+      }else{
+        i=0;
+      }
+    })
+  </script>
+</html>
