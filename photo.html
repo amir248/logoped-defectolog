@@ -28,25 +28,32 @@
         document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
       }else{
         i=0;
+        document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
       }
     });
     document.querySelector('.left').addEventListener('click',()=>{
-      console.log('left');
+      console.log('left'+"_"+`${i}`);
 
         i--;
         if(i>0){
           document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
+        }else if(i==0||i<=0){
+          console.log('that_'+countPhoto.length);
+          i=countPhoto.length-1;
+          document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
         }else{
           i=countPhoto.length;
+          document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
         }
     });
     document.querySelector('.right').addEventListener('click',()=>{
-      console.log('right');
+      console.log('right'+"_"+`${i}`);
       i++;
       if(i<countPhoto.length){
         document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
       }else{
         i=0;
+        document.querySelector('#img').setAttribute('src', 'photo/'+`${countPhoto[i]}`);
       }
     });
   </script>
