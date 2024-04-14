@@ -19,7 +19,12 @@ document.querySelector('#menu').addEventListener('click',()=>{
     transition: all 3s ease-out;
     `;
     setTimeout(()=>{
-      newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a><label><h3 onClick="chooseLanguageTwo()">Language </h3></label>`;
+      newBox.innerHTML=`<a href="#portfolio"><h3>Портфолио</h3></a><a href="#work"><h3> Работа</h3></a><a href="#contacts"><h3>Контакты</h3></a><label><h3 onClick="chooseLanguageTwo()">Language </h3></label>
+
+      <a href="https://ykxz3381.uds.app/c/join?ref=ykxz3381">
+        <h3>Card</h3>
+      </a>
+      `;
     },200);
     setTimeout(()=>{
       // console.log('oK');
