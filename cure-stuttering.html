@@ -75,6 +75,28 @@
             color:white;
             text-shadow:1px 1px black;
         }
+        body > main > header > div:nth-child(3){
+            min-height:300px;
+            display:grid;
+            justify-content: space-between;
+
+        }
+        body > main > header > div:nth-child(3) > div > picture > img{
+            width:70px;
+        }
+        body > main > header > div:nth-child(3) > div > picture > img:hover{
+            border:3px solid black;
+            border-radius:17px;
+            /* mix-blend-mode: multiply; */
+            mix-blend-mode: hard-light;
+            /* mix-blend-mode: difference; */
+            box-shadow: 2px 2px black;
+            /* transition: all .1s ease-out; */
+        }
+        body > main > header > div:nth-child(3) > div > picture > img:active{
+            box-shadow: -2px -2px rgb(54, 54, 54);
+            /* transition: all .1s ease-out; */
+        }
         .mainButton{
             width:100%;
             max-width:300px;
@@ -117,7 +139,7 @@
             grid-auto-flow: column;
             align-content:center;
             height:200px;
-            background:linear-gradient(rgb(57,57,57), rgb(31, 31, 31));
+            background:linear-gradient(rgb(77,77,77), rgb(31, 31, 31));
         }
         footer > strong{
             display:grid;
@@ -170,6 +192,17 @@
                 <a href="https://wa.clck.bar/79818517641">
                     <button class="mainButton">Записаться на консультацию</button>
                 </a>
+               <div>
+                <picture>
+                    <img src="public/site/img/ok.png" alt="odnoklassniki">
+                </picture>
+                <picture>
+                    <img src="public/site/img/vk.png" alt="vk">
+                </picture>
+                <picture>
+                    <img src="public/site/img/whatsapp.png" alt="whatsapp">
+                </picture>
+               </div>
             </div>
         </header>
         <article>
