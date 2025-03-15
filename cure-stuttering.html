@@ -14,12 +14,19 @@
             --main-width:100%;
             --max-width:1440px;
         }
+        @font-face {
+            font-family: Roboto;
+            src: url(public/site/Roboto/Roboto-VariableFont_wdth,wght.ttf);
+            font-weight: bold;
+        }
         body{
             background-color: aliceblue;
             width:100%;
             max-width:var(--max-width);
             margin-right:auto;
             margin-left:auto;
+            font-size:20px;
+            font-family:"Roboto";
         }
         main{
             display:flex;
