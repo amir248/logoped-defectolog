@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    max-width:900px;
+    font-size:20px;
+}
+ol {
+    display: table; /* Включаем форматирование в виде таблицы */
+    counter-reset: section; /* Вновь сбрасываем счетчик */
+    list-style-type: none; /* Отключаем стандартные маркеры списка */
+}
+
+li {
+    display: table-row; /* Каждый элемент списка представляем как строку таблицы */
+    counter-increment: section;
+}
+
+li::before {
+    display: table-cell; /* Создание псевдо-элемента как ячейки таблицы */
+    text-align: right; /* Выравнивание текста по правому краю */
+    padding-right: 10px; /* Отступ от правого края */
+    content: counters(section, ".") ". "; /* Вывод номера, учитывающего иерархию */
+}
+body > main > article > ol > li > p{
+    margin:1%;
+}
+
+ ol > p{
+    margin:1%;
+}
+ body > main > article > ol > li, body > main > article > ol > li > ol > li{
+    margin:1%;
+}
