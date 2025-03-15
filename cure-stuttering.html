@@ -5,198 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cure stuttering</title>
     <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-        :root{
-            --main-width:100%;
-            --max-width:1440px;
-        }
-        @font-face {
-            font-family: Roboto;
-            src: url(public/site/Roboto/Roboto-VariableFont_wdth,wght.ttf);
-            font-weight: bold;
-        }
-        body{
-            background-color: aliceblue;
-            width:100%;
-            max-width:var(--max-width);
-            margin-right:auto;
-            margin-left:auto;
-            font-size:20px;
-            font-family:"Roboto";
-        }
-        main{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width:100%;
-            max-width:1440px;
-        }
-        header{
-            width:var(--main-width);
-            max-width:var(--max-width);
-            background-color: #f5f1f0;
-            display:grid;
-            align-content:space-between;
-            justify-content: center;
-            align-items: center;
-            min-height:100vh;
-            background: url(public/site/img/logoped-defectolog.webp);
-            background-position: right center;
-        }
-        header > nav{
-            background-color: #5dcdd5;
-            min-height:70px;
-            display:grid;
-            justify-content: center;
-            align-items: center;
-        }
-        header > nav > ul > li{
-            display:inline-block; 
-            font-size:20px;
-            margin-right:17px;          
-        }
-        header > nav > ul > li > a{
-            text-decoration: none;
-            color:yellow;
-            transition: all 1s ease-in-out;
-        }
-        header > nav > ul > li > a:hover{
-            color:rgb(243, 243, 142);
-            transition: all 1s ease-in-out;
-            text-shadow:1px 1px black;
-        }
-        header > nav > ul > li > a:active{
-            text-shadow:-1px -1px black;
-            transition: all 0.1s ease-in-out;
-        }
-        .center > h1{
-            color:white;
-            text-shadow:1px 1px black;
-            max-width:400px;
-        }
-        .center > p{
-            color:white;
-            text-shadow:1px 1px black;
-            max-width:400px;
-        }
-        body > main > header > div:nth-child(3){
-            min-height:300px;
-            display:grid;
-            justify-content: space-between;
-        }
-        body > main > header > div:nth-child(3) > div > picture > img{
-            width:70px;
-            border:3px solid transparent;
-        }
-        body > main > header > div:nth-child(3) > div > picture > img:hover{
-            border:3px solid black;
-            border-radius:17px;
-            /* mix-blend-mode: multiply; */
-            mix-blend-mode: hard-light;
-            /* mix-blend-mode: difference; */
-            box-shadow: 2px 2px black;
-            /* transition: all .1s ease-out; */
-        }
-        body > main > header > div:nth-child(3) > div > picture > img:active{
-            box-shadow: -2px -2px rgb(54, 54, 54);
-            /* transition: all .1s ease-out; */
-        }
-        .mainButton{
-            width:100%;
-            max-width:300px;
-            min-height:70px;
-            background-color: coral;
-            border: none;
-            border-radius: 37px;
-            color:white;
-            text-shadow:1px 1px black;
-            font-size:30px;
-            transition: all .1s ease-in-out;
-        }
-        .mainButton:hover{
-            background-color: rgb(243, 190, 171);
-            color:rgb(252, 227, 0);
-            transition: all .1s ease-in-out;
-            box-shadow: 2px 2px black;
-        }
-        .mainButton:active{
-            transition: all 0s ease-in-out;
-            box-shadow:-2px -2px rgb(37, 37, 37);
-        }
-        article{
-            width: 100%;
-            max-width: var(--max-width);
-            display: grid;       
-        }
-        article > div > ul{
-            margin-left:17px;
-        }
-        footer{
-            display:grid;
-            width:100%;
-            max-width:var(--max-width);
-            grid-auto-flow: row;
-            background-color: rgb(33, 33, 33);
-            color:white;
-            text-shadow:1px 1px black;
-        }
-        footer > div{
-            display:grid;
-            width:100%;
-            max-width:var(--max-width);
-            justify-content: space-around;
-            grid-auto-flow: column;
-            align-content:center;
-            height:200px;
-            background:linear-gradient(rgb(77,77,77), rgb(31, 31, 31));
-        }
-        footer > strong{
-            display:grid;
-            align-content:center;
-            justify-content: center;
-            min-height:70px;
-            grid-auto-flow:column;
-            background:linear-gradient( rgb(31, 31, 31),rgb(00,00,00));
-        }
-        footer > div > ul{
-            list-style-type: none;
-        }
-        footer > div > ul > li > a{
-            text-decoration:none;
-            color:white;
-        }
-        footer > div > ul > li > a:hover{
-            color:#5dcdd5;
-        }
-    </style>
+    <link rel="stylesheet" href="public/site/css/cureStuttering.css">
+    <link rel="stylesheet" href="public/site/css/nav.css">
+    <link rel="stylesheet" href="public/site/css/footer.css">
+    <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
+
 </head>
 <body>
     <main>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href=".">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#services">Услуги</a>
-                    </li>
-                    <li>
-                        <a href="#sigCommentsBlock">Отзовы</a>
-                    </li>
-                    <li>
-                        <a href="#about">О центре</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav w3-include-html="public/site/includeHTML/nav.html"></nav>
 
             <div class="center">
                 <h1>Свободное общение - ваша новая реальность</h1>
@@ -290,27 +108,8 @@
 
             </div>
         </article>
-        <footer>
-            <div id="contact">
-                <ul>
-                    <li>tel:</li>
-                    <li>watsApp</li>
-                    <li>email:</li>
-                    <li>telega:</li>
-                </ul>
-                <ul>
-                    <h3>Информация: </h3>
-                    <li>
-                        <a href="Public-Offer">Публичная оферта</a>
-                    </li>
-                    <li>
-                        <a href="Privacy-Policy">Политика конфиденциальности</a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <strong> <span>©</span> <p>все права защищены</p></strong>
-        </footer>
+        <footer w3-include-html="public/site/includeHTML/footer.html"></footer>
     </main>
+    <script defer src="/public/site/js/includeHtml.js"></script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --main-width:100%;
+    --max-width:1440px;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../Roboto/Roboto-VariableFont_wdth,wght.ttf);
+    font-weight: bold;
+}
+body{
+    background-color: aliceblue;
+    width:100%;
+    max-width:var(--max-width);
+    margin-right:auto;
+    margin-left:auto;
+    font-size:20px;
+    font-family:"Roboto";
+}
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    max-width:1440px;
+}
+header{
+    width:var(--main-width);
+    max-width:var(--max-width);
+    background-color: #f5f1f0;
+    display:grid;
+    align-content:space-between;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: url(../img/logoped-defectolog.webp);
+    background-position: right center;
+}
+
+.center > h1{
+    color:white;
+    text-shadow:1px 1px black;
+    max-width:400px;
+}
+.center > p{
+    color:white;
+    text-shadow:1px 1px black;
+    max-width:400px;
+}
+body > main > header > div:nth-child(3){
+    min-height:300px;
+    display:grid;
+    justify-content: space-between;
+}
+body > main > header > div:nth-child(3) > div > picture > img{
+    width:70px;
+    border:3px solid transparent;
+}
+body > main > header > div:nth-child(3) > div > picture > img:hover{
+    border:3px solid black;
+    border-radius:17px;
+    /* mix-blend-mode: multiply; */
+    mix-blend-mode: hard-light;
+    /* mix-blend-mode: difference; */
+    box-shadow: 2px 2px black;
+    /* transition: all .1s ease-out; */
+}
+body > main > header > div:nth-child(3) > div > picture > img:active{
+    box-shadow: -2px -2px rgb(54, 54, 54);
+    /* transition: all .1s ease-out; */
+}
+.mainButton{
+    width:100%;
+    max-width:300px;
+    min-height:70px;
+    background-color: coral;
+    border: none;
+    border-radius: 37px;
+    color:white;
+    text-shadow:1px 1px black;
+    font-size:30px;
+    transition: all .1s ease-in-out;
+}
+.mainButton:hover{
+    background-color: rgb(243, 190, 171);
+    color:rgb(252, 227, 0);
+    transition: all .1s ease-in-out;
+    box-shadow: 2px 2px black;
+}
+.mainButton:active{
+    transition: all 0s ease-in-out;
+    box-shadow:-2px -2px rgb(37, 37, 37);
+}
+article{
+    width: 100%;
+    max-width: var(--max-width);
+    display: grid;       
+}
+article > div > ul{
+    margin-left:17px;
+}
