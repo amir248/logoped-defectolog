@@ -73,6 +73,7 @@ body > main > article > nav > ul:before{
     color:yellow;
     font-size:20px;
     text-shadow:1px 1px black;
+    font-size:30px;
 }
 .openMenu > a:hover{
     color:rgb(255, 255, 120);
