@@ -42,3 +42,9 @@ body > main > article > ol > li > p{
  body > main > article > ol > li, body > main > article > ol > li > ol > li{
     margin:1%;
 }
+
+@media print { /*для печати*/
+    nav, footer{
+      display:none !important;
+    }
+   }
