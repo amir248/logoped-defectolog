@@ -69,15 +69,19 @@ body > main > article > nav > ul:before{
     transition:all 1s ease;
     opacity:0;
 }
-.openMenu > a{
+.openMenu > div{
+    display:grid;
+    min-height:500px;
+}
+.openMenu > div > a{
     text-decoration: none;
     color:yellow;
-    font-size:20px;
+    font-size:0px;
     text-shadow:1px 1px black;
     font-size:0px;
     transition:all 1s ease-out;
 }
-.openMenu > a:hover{
+.openMenu > div > a:hover{
     color:rgb(255, 255, 120);
     transition:all 1s ease-out;
 }
