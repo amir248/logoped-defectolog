@@ -29,17 +29,33 @@
         article > div {
             width: 100%;
         }
-        article > picture > img{
+        body > main > article > picture:nth-child(3) > img{
             float:right;
             width:100%;
             max-width:500px;
+            border-radius: 0 0 0 17px;
         }
         @media(max-width:700px){
-            article > picture > img{
-            
-            max-width:100%;
+            body > main > article > picture:nth-child(3) > img{
+                border-radius: 0;
+                max-width:100%;
+            }
         }
+        body > main > article > picture:nth-child(10) > img{
+            float:left;
+            width:100%;
+            max-width:500px;
+            border-radius: 0 17px 17px 0;
+            margin-right:27px;
         }
+        @media(max-width:700px){
+            body > main > article > picture:nth-child(10) > img{
+                border-radius:0;
+                max-width:100%;
+                margin:0;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -67,10 +83,12 @@
             </ol>
         
             
-        
+            <picture>
+                <img src="public/site/img/threeImg.jpeg" alt="лечение заикания">
+            </picture>
             <ul>
-                <h3>Преимущества работы с Татьяной Павловной</h3>
-                <li>Индивидуальный подход. Татьяна Павловна учитывает особенности каждого пациента, разрабатывая программы лечения, которые максимально соответствуют его потребностям и возможностям.</li>
+                <h3>Преиму<wbr>щества работы с Татьяной Павловной</h3>
+                <li>Индивидуаль<wbr>ный подход. Татьяна Павловна учитывает особенности каждого пациента, разрабатывая программы лечения, которые максимально соответствуют его потребностям и возможностям.</li>
                 <li>Комплексный подход. Лечение включает не только работу над речью, но и психологическую поддержку, что способствует более эффективному и устойчивому результату.</li>
                 <li>Опыт и профессионализм. Благодаря своему опыту и квалификации, Татьяна Павловна способна помочь даже в сложных случаях заикания, предлагая современные и проверенные методы лечения.</li>
             </ul>
