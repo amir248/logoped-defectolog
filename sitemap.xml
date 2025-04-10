@@ -9,43 +9,49 @@
   <url>
     <loc>https://fonolog.ru/work</loc>
     <lastmod>2024-02-18</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
 <url>
     <loc>https://fonolog.ru/speech-therapist-defectologist-Tatyana-Pavlovna</loc>
     <lastmod>2025-03-02</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
     <loc>https://fonolog.ru/cure-stuttering</loc>
     <lastmod>2025-03-17</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
     <loc>https://fonolog.ru/Privacy-Policy</loc>
     <lastmod>2025-03-17</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
     <loc>https://fonolog.ru/Public-Offer</loc>
     <lastmod>2025-03-17</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
     <loc>https://fonolog.ru/article-stuttering-treatment</loc>
     <lastmod>2025-03-18</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
   <url>
     <loc>https://fonolog.ru/speech-therapy-office</loc>
     <lastmod>2025-04-09</lastmod>
-    <priority>1</priority>
+    <priority>0.9</priority>
+    <changefreq>always</changefreq>
+  </url>
+  <url>
+    <loc>https://fonolog.ru/acquaintance</loc>
+    <lastmod>2025-04-10</lastmod>
+    <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
 </urlset>
