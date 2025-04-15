@@ -28,10 +28,21 @@ function onClick(){
         resolve(createOnClick());
     })
 }
-
-window.addEventListener("DOMContentLoaded",oKmainFunction());
+function includeHTML(){
+    return new Promise((resolve)=>{
+        function oKpromis(){
+            const box=document.createElement('script');
+            box.src='public/site/js/includeHtml.js';
+            document.querySelector('body').append(box);
+        }
+        resolve(oKpromis());
+    });
+}
+// window.addEventListener("DOMContentLoaded",oKmainFunction());
 async function oKmainFunction(){
     await menuOk();
     await videos();
     await onClick();
+    await includeHTML();
 }
+oKmainFunction();
