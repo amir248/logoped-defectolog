@@ -40,9 +40,9 @@ function includeHTML(){
 }
 // window.addEventListener("DOMContentLoaded",oKmainFunction());
 async function oKmainFunction(){
+    await includeHTML();
     await menuOk();
     await videos();
     await onClick();
-    await includeHTML();
 }
 oKmainFunction();
