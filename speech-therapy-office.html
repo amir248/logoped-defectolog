@@ -244,7 +244,7 @@
         </section>
         </article>
        
-        <aside>
+        <aside id="onTop">
            <style>
             aside{
                 position: sticky;
@@ -257,7 +257,29 @@
     </main>
     
     <footer w3-include-html="public/site/includeHTML/footer.html"></footer>
+    
     <script defer src="public/site/js/main.js"></script>
+    <script>
+        setTimeout(()=>{
+            if(window.innerWidth<1244){
+                document.getElementById("onTop").style.display="none";
+                const sec=document.createElement('section');
+                sec.setAttribute('id','sec');
+                sec.style.cssText=`
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    width:100%;
+                `;
+                document.querySelector('body').insertBefore(sec, document.querySelector('footer'));
+
+                const as=document.createElement('aside');
+                as.setAttribute("w3-include-html", "aside.html");
+                document.querySelector('#sec').append(as) 
+            }
+        },1300);
+ 
+    </script>
 </body>
 
 </html>
