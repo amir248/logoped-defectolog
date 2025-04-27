@@ -1,0 +1,248 @@
+<style>
+    aside{
+        min-width:300px;
+        max-width:300px;
+        height:390px;
+        font-family:arial;
+        margin-top:30px;
+        margin:10px;
+    }
+
+    :root{
+        --width-box:50px;
+        --height-box:50px;
+    }
+    #boxF{
+        width:var(--width-box);
+        height: var(--height-box);
+    }
+    .oK{
+        display:flex;
+        justify-content: space-between;
+
+    }
+    .oK > div > strong{
+        font-size: 54px;
+        font-weight: 900;
+        color:rgb(220, 128, 148);;
+    }
+    .oK > div > p{
+        font-size: 10px;
+        text-align: center;
+    }
+    #boxF{
+        width:var(--width-box);
+        height:var(--height-box);
+        position: relative;
+        display:flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #boxF > span{
+        font-size: 33px;
+    }
+    .brownB{
+        background-color: rgb(220, 128, 148);
+    }
+    .brownBb{
+        background-color: rgb(46, 152, 174);
+    }
+    .blueB{
+        background-color:rgb(55, 146, 174);
+    }
+    .firstSpan{
+        position: absolute;
+        bottom:20px;
+        display:block;
+        font-size: 50px;
+        rotate: -130deg;
+    }
+    .secondSpan{
+        width: 50px;
+        height:50px;
+        display:block;
+        font-size: 30px;
+        transform: rotate(-33deg);
+        text-shadow: white 1px 1px;
+        position: absolute;
+        left:3px;
+    }
+    /* Two */
+    .secondOk > div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        /* flex-direction: column; */
+
+    }
+    .secondOk > div:nth-child(1) > div:nth-child(1){
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:50px;
+        flex-direction: column;
+
+    }
+    .secondOk > div:nth-child(1) > div:nth-child(2){
+        display:flex;
+        justify-content: center;
+        align-items: start;
+        width:250px;
+        flex-direction:column;
+    }
+    .secondOk > div:nth-child(1) > div:nth-child(2) > i{
+        margin-left:10%;
+    }
+    .secondOk > div > span{
+        width: 50px;
+        height:50px;
+        display:block;
+    }
+    .yellowB{
+        background-color: rgb(228, 186, 110);
+    }
+    /* three */
+    .three{
+        display:block;
+    }
+    .three > div{
+        display:flex;
+
+    }
+    .three > div > span{
+        width:50px;
+        height:50px;
+        background: aquamarine;
+        display:block;
+    }
+    #longSpan{
+        width:200px;
+        height:50px;
+        /* background: rgb(168, 168, 65); */
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .three > div:nth-child(2) > span:nth-child(1){
+        background-color: rgb(206, 206, 118);
+    }
+    .three > div:nth-child(2) > span:nth-child(2){
+        background-color: white;
+    }
+    .three > div:nth-child(2) > span:nth-child(3){
+        background-color: rgb(62, 79, 116);
+    }
+    .three > div:nth-child(2) > span:nth-child(4){
+        background-color: rgb(80, 103, 146);
+    }
+    .three > div:nth-child(2) > span:nth-child(5){
+        background-color: rgb(255, 255, 255);
+    }
+    div.yellowB:nth-child(4) > span:nth-child(1){
+        position: absolute;
+        left:30px;
+        font-size:50px !important;
+        top:10px;
+        z-index: 33;
+    }
+    .brownBb > span:nth-child(1){
+        font-size: 50px !important;
+        position: absolute;
+        right:30px;
+        transform: rotate(-50deg);
+    }
+    img{
+        max-width:700px;
+        width:100%;
+    }
+    div.brownB:nth-child(6) > span:nth-child(1){
+        font-size: 50px !important;
+        position: absolute;
+        right:30px;
+        bottom:1px;
+        transform: rotate(40deg);
+    }
+</style>
+<aside>
+    <div class="oK">
+        <div>
+            <strong>ВВЕРХ</strong>
+            <p>ужегодная конференция для руководителей <br> частных образовательных организаций</p>
+        </div>
+        <div>
+            <div id="boxF" class="brownB">
+                <span class="firstSpan">✏️</span>
+            </div>
+            <div id="boxF" class="blueB">
+                <span class="secondSpan">📎</span>
+            </div>
+        </div>
+    </div>
+    <div class="secondOk">
+        <div>
+            <div>
+                <div id="boxF" class="yellowB">
+                    <span>📏</span>
+                </div>
+                <div id="boxF">
+                    <span>🖍🖍🖍</span>
+                </div>
+                <div id="boxF" class="brownB">
+                    <span>📄</span>
+                </div>
+                <div id="boxF" class="yellowB">
+                    <span>📘</span>
+                </div>
+            </div>
+            <div>
+                <i>Понякова <br> &nbsp; &nbsp; Татьяна</i>
+                <i>Санкт-Петербург</i>
+                <i>ООО "Место роста"</i>
+                <i>&nbsp; &nbsp;&nbsp; &nbsp;Логопед</i>
+            </div>
+        </div>
+    <div>
+
+        </div>
+    </div>
+    <div class="three">
+        <div>
+            <div id="boxF">
+                <span></span>
+            </div>
+            <div id="boxF" class="brownB">
+                <span></span>
+            </div>
+            <div id="longSpan" class="yellowB">
+                <i>Участник</i>
+            </div>
+        </div>
+        <div>
+            <div id="boxF">
+                <span>📌</span>
+            </div>
+            <div id="boxF">
+                <span>📒</span>
+            </div>
+            
+            <div id="boxF" class="blueB">
+                <span></span>
+            </div>
+            <div id="boxF" class="brownBb">
+                <span>✏️</span>
+            </div>
+            <div id="boxF">
+                <span></span>
+            </div>
+           
+            <div id="boxF" class="brownB">
+                <span>🖌️</span>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- <img src="photo/certificate/33.jpeg" alt=""> -->

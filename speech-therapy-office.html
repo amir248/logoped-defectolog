@@ -52,7 +52,7 @@
         "url": "https://fonolog.ru/"
       },
       "datePublished" : "2025-04-09 06:27:07 GMT",
-      "dateModified" : "2025-04-16 07:27:07 GMT",
+      "dateModified" : "2025-04-27 07:57:17 GMT",
       "image" : "https://fonolog.ru/photo/2.jpeg",
       "articleSection" : "Запуск речи у ребёнка — важный этап в его развитии. Если вы заметили, что ваш малыш испытывает трудности с речью, не стоит откладывать визит к логопеду. Татьяна Павловна, опытный специалист в области логопедии, предлагает бесплатную консультацию для родителей, обеспокоенных развитием речи своих детей.",
       "url" : "https://fonolog.ru/speech-therapy-office",
@@ -66,7 +66,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://fonolog.ru/speech-therapist-defectologist-Tatyana-Pavlovna.html"
+        "@id": "https://fonolog.ru/speech-therapist-defectologist-Tatyana-Pavlovna"
       }
     }
     </script>
@@ -86,8 +86,8 @@
         main{
             display:flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            align-items: start !important;
+            flex-direction: row !important;
             width:100%;
             max-width:1300px;
         }
@@ -103,6 +103,7 @@
 
         article{
             display:block !important;
+            max-width:900px !important;
         }
         article > picture > img{
             width:100%;
@@ -212,8 +213,7 @@
             <p>Если вы обеспокоены развитием речи у вашего ребёнка, мы готовы предложить профессиональную помощь и поддержку. Свяжитесь с нами, чтобы узнать больше о наших услугах и записаться на консультацию.</p>
         
         <a href="tel:+79893619813">89893619813</a>
-        </article>
-        <!--Start of Tawk.to Script-->
+         <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -242,9 +242,22 @@
 </script>
 
         </section>
-
+        </article>
+       
+        <aside>
+           <style>
+            aside{
+                position: sticky;
+                top:0;
+            }
+           </style>
+            <!-- <script src="public/site/js/xxx.js"></script> -->
+            <div w3-include-html="aside.html"></div>
+        </aside>
     </main>
+    
     <footer w3-include-html="public/site/includeHTML/footer.html"></footer>
     <script defer src="public/site/js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сертификат Участника</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+    }
+    .certificate {
+      width: 800px;
+      height: 600px;
+      background: white;
+      margin: 50px auto;
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background-image: url('certificate-background.png'); /* можно вставить фон по желанию */
+      background-size: cover;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar .city {
+      background-color: #b7322c;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    .title {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 36px;
+      color: #0073aa;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .participant {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 40px;
+    }
+    .name {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .organizer {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      font-size: 14px;
+    }
+    .stamp {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      width: 120px;
+      height: 120px;
+      background: url('stamp-placeholder.png') no-repeat center/contain;
+    }
+  </style>
+</head>
+<body>
+
+<div class="certificate">
+  <div class="top-bar">
+    <div class="city">КАЗАНЬ 19-22 Апреля</div>
+  </div>
+  <div class="title">СЕРТИФИКАТ</div>
+  <div class="subtitle">Участника ежегодной конференции для руководителей частных образовательных организаций</div>
+  <div class="participant">Выдан</div>
+  <div class="name">Поняковой Татьяне</div>
+  <div class="organizer">
+    Организатор<br>
+    Просвирова Ирина Николаевна
+  </div>
+  <div class="stamp"></div>
+</div>
+
+</body>
+</html>
