@@ -15,5 +15,5 @@ let number=getRandomInt(3);
 if(number==0||number==1){
     document.querySelector("body > main:nth-child(2) > picture:nth-child(2) > img:nth-child(1)").src="photo/19.06.2025/one.jpeg";
 }else if(number ==2||number==3){
-    document.querySelector("body > main:nth-child(2) > picture:nth-child(2) > img:nth-child(1)").src="photo/19.06.2025/two.jpeg";
+    document.querySelector("body > main:nth-child(2) > picture:nth-child(2) > img:nth-child(1)").src="photo/19.06.2025/three.jpeg";
 }
