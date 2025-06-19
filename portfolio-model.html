@@ -99,6 +99,27 @@
             width:100%;
             max-width:40px;
         }
+
+        body > main > section > video{
+            opacity:0;
+            width:100%;
+            min-height:150px;
+            transition:all ease 1s;
+            display:none;
+        }
+        .displayOne{
+            display:block;
+        }
+        /* .displayTwo,.displayThree{
+            display:none;
+        } */
+        body > main > section > div{
+            width:100%;
+            text-align: center;
+        }
+        body > main > section > div > button{
+            width:31%;
+        }
         footer{
             width:100%;
             height:170px;
@@ -177,11 +198,26 @@
 
         </article>
         <section>
-             <video controls width="100%">
+            <video controls width="100%" class="displayOne">
                 <source src="video/MickelDjacson.mp4" type="video/mp4">
                 <!-- <source src="cats.webm" type="video/webm">
                 <source src="cats.ogv" type="video/ogg"> -->
             </video>
+            <video controls width="100%" class="displayTwo">
+                <source src="video/oneVideo.mp4" type="video/mp4">
+                <!-- <source src="cats.webm" type="video/webm">
+                <source src="cats.ogv" type="video/ogg"> -->
+            </video>
+            <video controls width="100%" class="displayThree">
+                <source src="video/twoVideo.mp4" type="video/mp4">
+                <!-- <source src="cats.webm" type="video/webm">
+                <source src="cats.ogv" type="video/ogg"> -->
+            </video>
+            <div>
+                <button class="one">one</button>
+                <button class="two">two</button>
+                <button class="three">three</button>
+            </div>
         </section>
         <div>
             <!-- **Контакты:**
@@ -209,7 +245,40 @@
         </footer>
     </main>
     <script>
+        document.querySelector("#menuS").addEventListener("click",()=>{
+            console.log('menU oK');
 
+        });
+        document.querySelector(".one").addEventListener("click",()=>{
+            document.querySelector(".displayOne").style.cssText=`
+                opacity:1;
+            `;
+            document.querySelector(".displayTwo").style.opacity=0;
+            document.querySelector(".displayTwo").style.display="none";
+            document.querySelector(".displayThree").style.opacity=0;
+            document.querySelector(".displayThree").style.display="none";
+            document.querySelector("displayOne").style.sisplay="block";
+        });
+        document.querySelector(".two").addEventListener("click",()=>{
+            document.querySelector(".displayTwo").style.cssText=`
+                opacity:1;
+            `;
+            document.querySelector(".displayOne").style.opacity=0;
+            document.querySelector(".displayOne").style.display="none";
+            document.querySelector(".displayThree").style.opacity=0;
+            document.querySelector(".displayThree").style.display="none";
+            document.querySelector(".displayTwo").style.display="block";
+        });
+        document.querySelector(".three").addEventListener("click",()=>{
+            document.querySelector(".displayThree").style.cssText=`
+                opacity:1;
+            `;
+            document.querySelector(".displayOne").style.opacity=0;
+            document.querySelector(".displayOne").style.display="none";
+            document.querySelector(".displayTwo").style.opacity=0;
+            document.querySelector(".displayTwo").style.display="none";
+            document.querySelector(".displayThree").style.display="block";
+        })
     </script>
 </body>
 </html>
