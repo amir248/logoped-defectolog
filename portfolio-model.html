@@ -164,6 +164,17 @@
             top:0;
             background-color: white;
         }
+        .menuList > a{
+            font-size:33px;
+            text-decoration: none;
+            color:white;
+            text-shadow: 2px 2px black;
+            margin-top:25px;
+            
+        }
+        .menuList > a:hover{
+            color:aqua;
+        }
     </style>
 </head>
 <body>
@@ -279,7 +290,7 @@
                     `;
                 }
             );
-            menuDiv.innerHTML=`<a href="#">menu</a><a href="#">one</a><a href="#">two</a>`;
+            menuDiv.innerHTML=`<a href="/">Главная</a><a href="tel:+79893619813">+79893619813</a><a href="https://fonolog.ru">fonolog.ru</a>`;
             document.querySelector('body').style.overflow="hidden";
             document.querySelector(".menuList").addEventListener("click",()=>{
                 document.querySelector(".menuList").remove();
