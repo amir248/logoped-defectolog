@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Психолог Татьяна Павловна</title>
     <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            /* margin: 20px; */
+            background-color: rgb(205, 255, 255);
+            font-size:20px;
+        }
+        main{
+            margin-left:auto;
+            margin-right:auto;
+            width:100%;
+            max-width:1300px;
+            
+        }
+        article{
+            width:100%;
+            max-width:1300px;
+        }
+        article > picture > img{
+            width:100%;
+            max-width:400px;
+            float: right;
         }
         h1, h2 {
             color: #333;
@@ -21,11 +44,18 @@
             margin-bottom: 5px;
         }
     </style>
+    <link rel="stylesheet" href="public/site/css/nav.css">
+    <link rel="stylesheet" href="public/site/css/footer.css">
 </head>
 <body>
-
+    <main>
+        <nav w3-include-html="public/site/includeHTML/nav2.html"></nav>
+        <article>
+            
 <h1>Психолог Татьяна Павловна: профессиональная помощь в решении психологических проблем</h1>
-
+<picture>
+    <img src="photo/TatyanaPavlovna5.jpeg" alt="Психолог Татьяна Павловна">
+</picture>
 <h2>О специалисте</h2>
 <p>Татьяна Павловна — опытный психолог-консультант, помогающий людям находить выход из сложных жизненных ситуаций. За годы практики помогла более чем 3000 клиентам обрести внутреннюю гармонию и уверенность в себе.</p>
 
@@ -35,6 +65,7 @@
     <li>Детская психология и работа с подростками</li>
     <li>Семейная психология и консультирование пар</li>
 </ul>
+
 
 <h2>С какими проблемами работает специалист</h2>
 <ul>
@@ -91,5 +122,25 @@
 <p><strong>Формат работы:</strong> очный прием</p>
 <p>Доверьте свои проблемы профессионалу — вместе мы найдем путь к решению.</p>
 
+        </article>
+        <section>
+            <div id="sigCommentsBlock"></div>
+            <a href="http://sigcomments.com" style="font-size: 0.6em;">Система комментирования SigComments</a>
+            <script type="text/javascript">
+                (function(){
+                    var host_id = '7724';
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '//sigcomments.com/chat/?host_id='+host_id;
+                    var ss = document.getElementsByTagName('script')[0]; 
+                    ss.parentNode.insertBefore(script, ss);
+                })();
+            </script>
+
+        </section>
+        <footer w3-include-html="public/site/includeHTML/footer.html"></footer>
+    </main>
+    <script src="public/site/js/main.js"></script>
 </body>
 </html>
