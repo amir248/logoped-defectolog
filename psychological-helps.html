@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Психолог Татьяна Павловна</title>
+    <meta name="description" content="Психологическая помощь для подростков и взрослых. Профессиональная помощь в решении психологическхи проблем.">
     <style>
         *{
             margin:0;
@@ -33,6 +34,11 @@
             max-width:400px;
             float: right;
         }
+        @media(max-width:600px){
+             article > picture > img{
+                max-width:100%;
+            }
+        }
         h1, h2 {
             color: #333;
         }
@@ -46,10 +52,11 @@
     </style>
     <link rel="stylesheet" href="public/site/css/nav.css">
     <link rel="stylesheet" href="public/site/css/footer.css">
+     <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <main>
-        <nav w3-include-html="public/site/includeHTML/nav2.html"></nav>
+        <nav w3-include-html="public/site/includeHTML/nav3.html"></nav>
         <article>
             
 <h1>Психолог Татьяна Павловна: профессиональная помощь в решении психологических проблем</h1>
@@ -141,6 +148,7 @@
         </section>
         <footer w3-include-html="public/site/includeHTML/footer.html"></footer>
     </main>
-    <script src="public/site/js/main.js"></script>
+   <script defer src="/public/site/js/includeHtml.js"></script>
+    <script defer src="/public/site/js/menu500-3.js"></script>
 </body>
 </html>
