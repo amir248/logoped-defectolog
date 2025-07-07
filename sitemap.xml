@@ -66,4 +66,10 @@
     <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
+  <url>
+    <loc>https://fonolog.ru/psychological-helps</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>always</changefreq>
+  </url>
 </urlset>
