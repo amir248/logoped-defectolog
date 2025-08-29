@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги логопеда и дефектолога в Санкт-Петербурге | Логопед онлайн</title>
+    <meta name="description" content="Индивидуальные и групповые занятия с логопедом и дефектологом Татьяной Павловной в Санкт-Петербурге. Коррекция речи, онлайн-консультации, занятия для детей с особенностями развития.">
+    <meta name="keywords" content="логопед Санкт-Петербург, дефектолог для детей, коррекция речи, занятия с детьми аутизмом, логопедические услуги">
+    <link rel="stylesheet" href="#"> <!-- Подключение вашего CSS -->
+    <style>
+        /* === Общие стили === */
+        body {
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #fdfdfd;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* === Шапка сайта === */
+        header {
+            background: #2c82c9;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        header .btn {
+            background: #ffeb3b;
+            color: #333;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        header .btn:hover {
+            background: #ffc107;
+        }
+
+        /* === Главный баннер === */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #eaf6ff;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 20px auto;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            background: #2c82c9;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .hero .btn:hover {
+            background: #1e6091;
+        }
+
+        /* === Разделы === */
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .services article {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .services article:hover {
+            background: #eef7ff;
+        }
+
+        /* === Список преимуществ === */
+        .why-us ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .why-us ul li {
+            padding-left: 25px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .why-us ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #2c82c9;
+            font-weight: bold;
+        }
+
+        /* === Форма контактов === */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact input, 
+        .contact textarea, 
+        .contact button {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .contact button {
+            background: #2c82c9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact button:hover {
+            background: #1e6091;
+        }
+
+        /* === Подвал === */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        footer nav ul li {
+            margin: 0 10px;
+        }
+
+        footer nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .social a {
+            color: #ffeb3b;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer .social a:hover {
+            text-decoration: underline;
+        }
+
+        /* === Адаптивность === */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 5px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Логопед-дефектолог</div>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="about.html">О специалисте</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="contacts.html" class="btn">Записаться</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Услуги логопеда и дефектолога в Санкт-Петербурге</h1>
+            <p>Мы помогаем детям развивать речь, исправлять фонетические нарушения и уверенно общаться. Индивидуальные и групповые занятия, а также онлайн-консультации для вашего удобства.</p>
+            <a href="contacts.html" class="btn">Записаться на занятие</a>
+        </section>
+
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <article>
+                <h3>Индивидуальные занятия</h3>
+                <p>Персональные программы для каждого ребёнка с учётом его особенностей и потребностей. Мы проводим коррекцию речи, развиваем фонематический слух и улучшаем коммуникативные навыки.</p>
+            </article>
+            <article>
+                <h3>Групповые занятия</h3>
+                <p>Занятия в маленьких группах для развития речи и социализации детей. Игровая форма помогает детям учиться общению и взаимодействию друг с другом.</p>
+            </article>
+            <article>
+                <h3>Онлайн-консультации</h3>
+                <p>Удобные дистанционные занятия через интернет для детей и родителей. Возможность работать с логопедом, не выходя из дома, с сохранением эффективности занятий.</p>
+            </article>
+        </section>
+
+        <section class="why-us">
+            <h2>Почему выбирают нас</h2>
+            <ul>
+                <li>Опыт работы более 10 лет с детьми разных возрастов и особенностей.</li>
+                <li>Индивидуальный подход к каждому ребёнку и родителям.</li>
+                <li>Современные методики логопедии и дефектологии.</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Запись на занятие</h2>
+            <p>Свяжитесь с нами, чтобы записать ребёнка на индивидуальное или групповое занятие, либо на онлайн-консультацию.</p>
+            <form action="send_form.php" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+            <p>Адрес: Санкт-Петербург, ул. Примерная, д. 10<br>Телефон: +7 (XXX) XXX-XX-XX<br>Email: info@fonolog.ru</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О специалисте</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2025 Логопед-дефектолог Татьяна Павловна. Все права защищены.</p>
+        <div class="social">
+            <a href="#">VK</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
