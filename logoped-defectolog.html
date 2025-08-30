@@ -206,7 +206,10 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Логопед-дефектолог Татьяна Павловна</p>
+    <p>&copy; <span id="date"></span> Логопед-дефектолог Татьяна Павловна</p>
   </footer>
+  <script>
+    document.getElementById('date').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
