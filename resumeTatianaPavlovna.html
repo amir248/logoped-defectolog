@@ -51,6 +51,27 @@
         body > main > article > div{
             padding: 7px;
         }
+        footer{
+            background-color: black;
+            color:white;text-shadow: 1px 1px grey;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(30px,470px)); 
+            gap:10px;
+            min-height:70px;
+        }
+        footer > h3,div{
+            /* display: grid;
+            justify-content: center;
+            align-items: center;
+            justify-items: center; */
+            text-align: center;
+        }
+        footer > div > a{
+            color:white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -147,7 +168,13 @@
             <p><strong>Обязанности:</strong> Работа с детьми с расстройствами аутистического спектра, проведение коррекционно-развивающих занятий, взаимодействие с родителями и педагогами для улучшения речевых и коммуникативных навыков.</p>
         </div>
         </article>
+        <footer>
+             <h3>Логопед-дефектолог Татьяна Павловна</h3> <div><span>©</span>  <a href="https://fonolog.ru">Site</a> <span id="date"></span></div>
+        </footer>
     </main>
-
+    <script>
+        const d = new Date();
+        document.getElementById("date").textContent=d.getFullYear();
+    </script>
 </body>
 </html>
