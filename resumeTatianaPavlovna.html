@@ -306,7 +306,15 @@ footer a {
         <article>
             <h1>Резюме логопед-дефектолог Татьяна Павловна</h1>
             <picture>
-                <source  type="image/avif" srcset="photo/1111.avif"/>
+                <source 
+                    type="image/avif" 
+                    srcset="
+                        photo/1111-180.avif 180w,
+                        photo/1111-300.avif 300w,
+                        photo/1111-600.avif 600w
+                    " 
+                    sizes="(max-width: 480px) 100vw, (max-width: 768px) 300px, 180px">
+
                 <img src="photo/1111.jpeg" alt="логопед-дефектолог Татьяна Павловна">
             </picture>
             <div>
