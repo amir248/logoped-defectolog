@@ -321,9 +321,35 @@
         </nav>
       </div>
     </div>
-  </footer>
 
-  <script>
+    <div id="form-result" style="margin-top:12px; font-weight:600;"></div>
+  </footer>
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const result = document.getElementById("form-result");
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+        method: "POST",
+        body: formData
+        });
+
+        const text = await response.text();
+        result.textContent = text;
+        result.style.color = response.ok ? "green" : "red";
+
+        if (response.ok) form.reset();
+    } catch (err) {
+        result.textContent = "Ошибка: не удалось отправить заявку.";
+        result.style.color = "red";
+    }
+    });
+
     // Подставляем текущий год
     document.getElementById('year').textContent = new Date().getFullYear();
     // Простая отслеживающая метка (пример)
