@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обучение логопедии мам в декретном отпуске — Татьяна Павловна</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --text:#e6eef8;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071029 0%, #071827 100%);color:var(--text)}
+    .deck{height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box}
+    .slide{width:1000px;max-width:95%;height:640px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2));border-radius:18px;box-shadow:0 10px 30px rgba(2,6,23,0.7);padding:40px;box-sizing:border-box;position:relative;overflow:hidden;display:flex;flex-direction:column}
+    .slide h1{margin:0;font-size:36px;letter-spacing:-0.5px}
+    .slide h2{margin:0;font-size:22px;color:var(--accent)}
+    .slide p{margin:10px 0 0 0;line-height:1.45;color:var(--muted)}
+    .controls{position:absolute;right:18px;bottom:18px;display:flex;gap:8px}
+    .btn{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:10px 14px;border-radius:10px;color:var(--text);cursor:pointer}
+    .nav{position:absolute;left:18px;bottom:18px;display:flex;gap:8px;align-items:center}
+    .progress{height:8px;width:220px;background:rgba(255,255,255,0.03);border-radius:8px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7dd3fc);width:0%}
+    .pager{font-size:13px;color:var(--muted);min-width:64px;text-align:center}
+    .big{font-size:18px}
+    .columns{display:flex;gap:24px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;flex:1;border:1px solid rgba(255,255,255,0.02)}
+    .list{margin:0;padding-left:18px}
+    .footer-note{position:absolute;left:40px;bottom:24px;color:var(--muted);font-size:13px;margin:3%;}
+    .title-line{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#012; font-weight:700}
+    .speaker{position:absolute;right:40px;top:40px;width:300px;background:rgba(0,0,0,0.25);padding:12px;border-radius:10px;color:var(--muted);font-size:13px}
+    /* transitions */
+    .hidden{display:none}
+    /* responsive */
+    @media (max-width:720px){.slide{height:86vh;padding:20px}.speaker{display:none}.columns{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <!-- Slides container -->
+    <div id="slides-root" class="slide" role="region" aria-label="Презентация">
+      <!-- content injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    const slides = [
+      {
+        title: 'Обучение логопедии мам в декретном отпуске',
+        subtitle: 'Логопед-дефектолог Татьяна Павловна',
+        content: `<div style="display:flex;gap:20px;align-items:center">
+                    <div class="logo">ТП</div>
+                    <div>
+                      <h1>Обучение логопедии мам в декретном отпуске</h1>
+                      <h2>Логопед-дефектолог — Татьяна Павловна</h2>
+                    </div>
+                  </div>
+                  <p style="margin-top:18px">Короткая вводная: практическая программа для мам, желающих развивать речь ребёнка дома. Формат: простые упражнения, игровые задания и советы по ежедневной практике.</p>`
+      },
+      {
+        title: 'Зачем мамам логопедия?',
+        content: `<p class="big">Почему это важно</p>
+                  <ul class="list">
+                    <li>Развитие речи с раннего возраста.</li>
+                    <li>Профилактика и ранняя диагностика нарушений речи.</li>
+                    <li>Формирование правильных речевых привычек и общения.</li>
+                    <li>Развитие мышления, внимания и памяти через речь.</li>
+                  </ul>`
+      },
+      {
+        title: 'Основные направления обучения',
+        content: `<div class="columns">
+                    <div class="card"><strong>1. Артикуляционная гимнастика</strong><p class="list">Упражнения для губ, языка, щёк</p></div>
+                    <div class="card"><strong>2. Слуховое восприятие</strong><p class="list">Различение звуков, фокус на слух</p></div>
+                  </div>
+                  <div class="columns" style="margin-top:12px">
+                    <div class="card"><strong>3. Игры для словаря</strong><p class="list">Пальчиковые игры, обсуждение картинок</p></div>
+                    <div class="card"><strong>4. Дыхание и фонемы</strong><p class="list">Правильное дыхание, контроль выдоха</p></div>
+                  </div>`
+      },
+      {
+        title: 'Артикуляционная гимнастика',
+        content: `<p class="big">Простые упражнения</p>
+                  <ul class="list">
+                    <li>"Улыбка" / растянуть губы — 5 повторов.</li>
+                    <li>"Трубочка" — прогиб губ как трубочка, задержать 3–4 сек.</li>
+                    <li>"Лошадка" (пощёлкивание языком) — игровая форма.</li>
+                    <li>Каждое упражнение 5–7 минут в день, в игровой форме.</li>
+                  </ul>`
+      },
+      {
+        title: 'Игры для развития речи',
+        content: `<p class="big">Игровые методы</p>
+                  <ul class="list">
+                    <li>Пальчиковые игры и стихотворения — развитие моторики и речи.</li>
+                    <li>Чтение коротких сказок с вопросами к ребёнку.</li>
+                    <li>Рассматривание картинок и составление описания.</li>
+                    <li>Ритмика и музыка — развивает речевой темп и интонацию.</li>
+                  </ul>`
+      },
+      {
+        title: 'Роль мамы',
+        content: `<p class="big">Как мама помогает</p>
+                  <ul class="list">
+                    <li>Мама — главный пример речи для ребёнка.</li>
+                    <li>Теплый эмоциональный контакт + игра усиливают эффект.</li>
+                    <li>Регулярность: короткие занятия ежедневно эффективнее долгих раз в неделю.</li>
+                  </ul>`
+      },
+      {
+        title: 'Примеры домашних заданий',
+        content: `<p class="big">Практика на каждый день</p>
+                  <ol class="list">
+                    <li>"Повтори за мной" — артикуляционные повторения 5 минут.</li>
+                    <li>"Кто на картинке?" — расширение словаря через картинки.</li>
+                    <li>"Назови и покажи" — объекты из дома, 5–10 минут.</li>
+                    <li>"Сочини сказку" — совместное придумывание историй, развивает связную речь.</li>
+                  </ol>`
+      },
+      {
+        title: 'Ожидаемые результаты',
+        content: `<p class="big">Чего ждать</p>
+                  <ul class="list">
+                    <li>Уверенность мамы в поддержке речевого развития ребёнка.</li>
+                    <li>Навыки вовремя замечать и реагировать на проблемы.</li>
+                    <li>Подготовка ребёнка к детскому саду и школе.</li>
+                  </ul>`
+      },
+      {
+        title: 'Заключение и контакты',
+        content: `<p class="big">Итог</p>
+                  <p>Логопедия для мам — проста и доступна. Маленькие ежедневные шаги дают заметный прогресс.</p>
+                  <div style="margin-top:12px">
+                    <strong>Контакты:</strong>
+                    <p class="list">Татьяна Павловна — логопед-дефектолог<br>Телефон: +7989 361 98 13<br>Email: tat1986@mail.ru</p>
+                  </div>`
+      }
+    ];
+
+    let current = 0;
+    const root = document.getElementById('slides-root');
+
+    function render(){
+      const s = slides[current];
+      root.innerHTML = `
+        <div style=\"display:flex;justify-content:space-between;align-items:flex-start\"> 
+          <div>
+            <div class=\"title-line\"> 
+              <div class=\"logo\">ТП</div>
+              <div>
+                <h1>${s.title}</h1>
+                ${s.subtitle? `<h2>${s.subtitle}</h2>`: ''}
+              </div>
+            </div>
+            <div style=\"margin-top:18px\">${s.content}</div>
+          </div>
+          <div class=\"speaker\">Заметки для докладчика:\n<br><small>Кратко говорить: цель слайда, практическая рекомендация, пример для мамы.</small></div>
+        </div>
+        <div class=\"footer-note\">Слайды: ${current+1} / ${slides.length}</div>
+        <div class=\"controls\">
+          <button class=\"btn\" onclick=\"prev()\">◀ Предыдущий</button>
+          <button class=\"btn\" onclick=\"next()\">Следующий ▶</button>
+        </div>
+        <div class=\"nav\">
+          <div class=\"pager\">${current+1} / ${slides.length}</div>
+          <div class=\"progress\"><i style=\"width:${Math.round(((current+1)/slides.length)*100)}%\"></i></div>
+        </div>
+      `;
+      // add keyboard hint
+    }
+
+    function prev(){ if(current>0){ current--; render(); } }
+    function next(){ if(current<slides.length-1){ current++; render(); } }
+
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight' || e.code === 'Space') next();
+      if(e.key === 'ArrowLeft') prev();
+    });
+
+    // touch support
+    let touchStartX = null;
+    root.addEventListener('touchstart', e=>{ touchStartX = e.changedTouches[0].clientX; });
+    root.addEventListener('touchend', e=>{ if(!touchStartX) return; const dx = e.changedTouches[0].clientX - touchStartX; if(dx < -40) next(); if(dx > 40) prev(); touchStartX = null; });
+
+    // initialize
+    render();
+
+    // optional: print-friendly (each slide as page)
+    function printSlides(){
+      const win = window.open('', '_blank');
+      const styles = `body{font-family:Inter,Arial;margin:0} .slide-print{width:1200px;padding:40px;box-sizing:border-box}`;
+      let html = `<html><head><meta charset=\"utf-8\"><title>Печать слайдов</title><style>${styles}</style></head><body>`;
+      for(const s of slides){ html += `<div class=\"slide-print\"><h1>${s.title}</h1>${s.content}</div><hr>` }
+      html += `</body></html>`;
+      win.document.write(html); win.document.close();
+    }
+
+    // expose print function
+    window.printSlides = printSlides;
+  </script>
+
+  <!-- Quick actions overlay -->
+  <div style="position:fixed;left:18px;top:18px;z-index:999;font-size:13px;color:var(--muted)">
+    <button id="FS" class="btn" onclick="document.body.requestFullscreen?.()">Войти в полноэкранный режим</button>
+    <button class="btn" onclick="window.printSlides()">Открыть версию для печати</button>
+  </div>
+  <script>
+    const statusFullScreen={};
+    document.getElementById("FS").addEventListener("click",clickanter);
+    let num=+0;
+    function clickanter(){
+        num++;
+        console.log(num);
+        if(num==1){
+            document.querySelector("#FS").textContent="Выйти из полноэкранного режима";
+            
+        }else if(num==2){
+          document.exitFullscreen();
+          document.querySelector("#FS").textContent="Войти в полноэкранный режим";
+          num=0;
+        }else{
+          console.log('else');
+        }
+    }
+  </script>
+</body>
+</html>
