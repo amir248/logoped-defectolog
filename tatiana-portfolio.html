@@ -16,45 +16,46 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="styles.css" />
   <style>
     :root{
-  --bg:#fafafa;
-  --card:#fff;
-  --accent:#d94b6c;
-  --muted:#777;
-  --max:1100px;
-}
-*{box-sizing:border-box}
-body{
-  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-  margin:0;
-  background:var(--bg);
-  color:#111;
-  -webkit-font-smoothing:antialiased;
-}
-.container{max-width:var(--max);margin:0 auto;padding:20px}
-.site-header{background:linear-gradient(90deg,#fff 0,#f7f7f7 100%);border-bottom:1px solid #eee}
-.header-inner{display:flex;gap:20px;align-items:center;padding:18px}
-.avatar img{width:150px;height:150px;object-fit:cover;border-radius:8px;border:2px solid #eee}
-.title h1{margin:0;font-size:28px}
-.title .lead{margin:6px 0;color:var(--muted)}
-.quick{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
-.contacts a{display:inline-block;margin-top:10px;text-decoration:none;color:var(--accent);font-weight:600}
-.about, .gallery, .video, .experience, .cta{background:var(--card);border-radius:10px;padding:18px;margin:20px 0;box-shadow:0 6px 18px rgba(15,15,15,0.03)}
-.gallery .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.gallery figure{margin:0;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #eee}
-.gallery img{width:100%;height:260px;object-fit:cover;display:block}
-.gallery figcaption{padding:8px;font-size:14px;color:var(--muted)}
-.experience ul{margin:0;padding-left:18px}
-.cta .big-contact{font-size:20px;margin:8px 0}
-.footer{padding:16px;color:var(--muted);font-size:14px;text-align:center}
-@media (max-width:700px){
-  .header-inner{flex-direction:column;align-items:flex-start}
-  .avatar img{width:120px;height:120px}
-}
+      --bg:#fafafa;
+      --card:#fff;
+      --accent:#d94b6c;
+      --muted:#777;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      margin:0;
+      background:var(--bg);
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:var(--max);margin:0 auto;padding:20px}
+    .site-header{background:linear-gradient(90deg,#fff 0,#f7f7f7 100%);border-bottom:1px solid #eee}
+    .header-inner{display:flex;gap:20px;align-items:center;padding:18px}
+    .avatar img{width:150px;height:150px;object-fit:cover;border-radius:8px;border:2px solid #eee}
+    .title h1{margin:0;font-size:28px}
+    .title .lead{margin:6px 0;color:var(--muted)}
+    .quick{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
+    .contacts a{display:inline-block;margin-top:10px;text-decoration:none;color:var(--accent);font-weight:600}
+    .about, .gallery, .video, .experience, .cta{background:var(--card);border-radius:10px;padding:18px;margin:20px 0;box-shadow:0 6px 18px rgba(15,15,15,0.03)}
+    .gallery .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+    .gallery figure{margin:0;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #eee}
+    .gallery img{width:100%;height:260px;object-fit:cover;display:block}
+    .gallery figcaption{padding:8px;font-size:14px;color:var(--muted)}
+    .experience ul{margin:0;padding-left:18px}
+    .cta .big-contact{font-size:20px;margin:8px 0}
+    .footer{padding:16px;color:var(--muted);font-size:14px;text-align:center}
+    @media (max-width:700px){
+      .header-inner{flex-direction:column;align-items:flex-start}
+      .avatar img{width:120px;height:120px}
+    }
 
   </style>
+  <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
+
 </head>
 <body>
   <header class="site-header">
@@ -133,10 +134,14 @@ body{
     <footer class="footer">
       <p>Хештеги: <span>#кастинг #массовка #актриса #СПБ #киносъемки #массовкаспб</span></p>
       <p>Этот профиль подготовлен для размещения в группах и отправки кастинг-директорам.</p>
+      <strong>&copy; <span id="date"></span></strong>
     </footer>
   </main>
 
   <script>
+    const d = new Date();
+    let year=d.getFullYear();
+    document.getElementById("date").textContent=`${year}`;
     // Простая аналитика: открытие номера в консоли при клике (необязательно)
     document.querySelectorAll('a[href^="tel:"]').forEach(a => {
       a.addEventListener('click', () => console.log('Click call to', a.href));
