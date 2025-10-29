@@ -49,32 +49,32 @@ function choseVideo(gets){
       document.querySelector('.display > span:nth-child(2)').style.cssText=`background: grey;`;
       document.querySelector('.display > span:nth-child(3)').style.cssText=`background: grey;`;
 
-      document.querySelector('.video > iframe:nth-child(2)').style.cssText=`display:block`;
-      document.querySelector('.video > div:nth-child(3)').style.cssText=`display:none`;
-      document.querySelector('.video > div:nth-child(4)').style.cssText=`display:none`;
+      document.querySelector('.video > video:nth-child(2)').style.cssText=`display:block`;
+      document.querySelector('.video > video:nth-child(3)').style.cssText=`display:none`;
+      document.querySelector('.video > video:nth-child(4)').style.cssText=`display:none`;
       break;
     case 2:
     document.querySelector('.display > span:nth-child(1)').style.cssText=`background: grey;`;
       document.querySelector('.display > span:nth-child(2)').style.cssText=`background: black;`;
       document.querySelector('.display > span:nth-child(3)').style.cssText=`background: grey;`;
 
-      document.querySelector('.video > iframe:nth-child(2)').style.cssText=`display:none`;
-      document.querySelector('.video > div:nth-child(3)').style.cssText=`display:block`;
-      document.querySelector('.video > div:nth-child(4)').style.cssText=`display:none`;
+      document.querySelector('.video > video:nth-child(2)').style.cssText=`display:none`;
+      document.querySelector('.video > video:nth-child(3)').style.cssText=`display:block`;
+      document.querySelector('.video > video:nth-child(4)').style.cssText=`display:none`;
       break;
     case 3:
     document.querySelector('.display > span:nth-child(1)').style.cssText=`background: grey;`;
     document.querySelector('.display > span:nth-child(2)').style.cssText=`background: grey;`;
     document.querySelector('.display > span:nth-child(3)').style.cssText=`background: black;`;
 
-    document.querySelector('.video > iframe:nth-child(2)').style.cssText=`display:none`;
-    document.querySelector('.video > div:nth-child(3)').style.cssText=`display:none`;
-    document.querySelector('.video > div:nth-child(4)').style.cssText=`display:block`;
+    document.querySelector('.video > video:nth-child(2)').style.cssText=`display:none`;
+    document.querySelector('.video > video:nth-child(3)').style.cssText=`display:none`;
+    document.querySelector('.video > video:nth-child(4)').style.cssText=`display:block`;
     break;
   }
 }
 count.click=1;
-document.querySelector('.video > span:nth-child(1)').addEventListener('click',()=>{
+document.querySelector('.leftButton').addEventListener('click',()=>{
   count.click--;
   if(count.click<=0){
     count.click=3;

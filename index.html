@@ -113,7 +113,14 @@
   }
 }
 </script>
-
+<style>
+  .video > video:nth-child(3){
+    display:none;
+  }
+  .video > video:nth-child(4){
+    display:none;
+  }
+</style>
 
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -330,24 +337,33 @@ Tatyana Pavlovna</h1>
           </div>
         </section>
         <section>
-          <div class="video">
-            <span><</span>
-            <iframe width="570" height="315" src="https://www.youtube.com/embed/rjlvtEeoUCw?si=ATLKD_fwpa1kDOOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div style="display:none">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/0_K55htrBgw?si=eDcgHbxXfteHn5a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div style="display:none;">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/jw5l4GKTEQI?si=wID5X4QZpfMG5WGJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <span>></span>
+  <div class="video">
+    <span class="leftButton">&lt;</span>
+    <video width="570" height="315" controls>
+      <source src="video/videoplayback.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <!-- <div style="display:none"> -->
+      <video width="560" height="315" controls>
+        <source src="video/videoplayback2.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+    <!-- </div> -->
+    <!-- <div style="display:none;"> -->
+      <video width="560" height="315" controls>
+        <source src="video/videoplayback3.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+      </video>
+    <!-- </div> -->
+    <span>></span>
+  </div>
+  <div class="display">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</section>
 
-          </div>
-          <div class="display">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </section>
         <section class="sendMe">
           <h2 id="rus">Свяжитесь со мной!</h2>
           <p id="rus">Опишите свою проблему. Через некоторое время я отвечу и мы обсудим все, что вас интересует.</p>
