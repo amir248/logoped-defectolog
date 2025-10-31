@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} — Блог логопеда Fonolog.ru</title>
+  <meta name="description" content="{{ page.excerpt | strip_html }}">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/blog/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <a href="{{ '/blog/' | relative_url }}">← Назад в блог</a>
+  </header>
+
+  <main>
+    <h1>{{ page.title }}</h1>
+    <p><small>{{ page.date | date: "%d.%m.%Y" }}</small></p>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} Fonolog.ru — блог логопеда Татьяны Павловны</p>
+  </footer>
+</body>
+</html>
