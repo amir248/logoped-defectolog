@@ -1,29 +1,16 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Блог логопеда — Fonolog.ru</title>
-  <link rel="stylesheet" href="/blog/style.css" />
-</head>
-<body>
-  <h1>Блог логопеда Татьяны Павловны</h1>
-  <div id="blog-list"></div>
+---
+layout: default
+title: "Блог логопеда Татьяны Павловны"
+---
 
-  <script>
-    const posts = [
-      { title: "Как развивать речь у ребёнка", url: "/blog/posts/kak-razvivat-rech.html", date: "2025-10-28" },
-      { title: "Звуки Ш и Ж — тренируем правильно", url: "/blog/posts/zvuki-sh-i-zh.html", date: "2025-10-25" },
-      { title: "Советы логопеда родителям", url: "/blog/posts/sovety-logopeda.html", date: "2025-10-20" }
-    ];
+<h1>Блог логопеда в Санкт-Петербурге</h1>
+<p>Советы, упражнения и рекомендации по развитию речи у детей. Автор — Татьяна Павловна, логопед-дефектолог в Санкт-Петербурге.</p>
 
-    const list = document.getElementById("blog-list");
-    posts.forEach(p => {
-      const el = document.createElement("div");
-      el.className = "post";
-      el.innerHTML = `<a href="${p.url}">${p.title}</a><span>${p.date}</span>`;
-      list.appendChild(el);
-    });
-  </script>
-</body>
-</html>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span style="color: gray;">{{ post.date | date: "%d.%m.%Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
