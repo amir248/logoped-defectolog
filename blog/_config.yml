@@ -1,8 +1,0 @@
-title: "Блог логопеда — Fonolog.ru"
-description: "Полезные советы логопеда Татьяны Павловны по развитию речи у детей в Санкт-Петербурге"
-baseurl: "/blog"
-url: "https://fonolog.ru"
-theme: minima
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
