@@ -127,4 +127,10 @@
     <priority>0.9</priority>
     <changefreq>always</changefreq>
   </url>
+  <url>
+    <loc>https://fonolog.ru/autism-stuttering</loc>
+    <lastmod>2025-11-01</lastmod>
+    <priority>0.9</priority>
+    <changefreq>always</changefreq>
+  </url>
 </urlset>
