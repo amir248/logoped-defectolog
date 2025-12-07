@@ -9,7 +9,128 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#4f46e5">
-
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://fonolog.ru/dcp#person",
+      "name": "Понякова Татьяна Павловна",
+      "alternateName": "Т.П. Понякова",
+      "jobTitle": "Коррекционный педагог, логопед, преподаватель английского языка",
+      "image": "https://fonolog.ru/dcptatyana-ponyakova.jpg",
+      "description": "Преподаватель с опытом работы с детьми, имеющими ДЦП, заикание и речевые нарушения. Индивидуальная мягкая коррекционная методика и занятия по английскому языку.",
+      "email": "mailto:tat1986@mail.ru",
+      "telephone": "+79893619813",
+      "url": "https://fonolog.ru/dcp",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ваш город",
+        "addressCountry": "RU"
+      },
+      "sameAs": [
+        "https://vk.com/logospb25"
+      ],
+      "knowsAbout": [
+        "Коррекционная педагогика",
+        "Логопедия",
+        "Заикание",
+        "ДЦП",
+        "Детский английский язык"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://fonolog.ru/dcp#service",
+      "name": "Коррекционные занятия и обучение английскому",
+      "serviceType": "Коррекционная педагогика и логопедия; Английский язык для детей с особенностями развития",
+      "provider": {
+        "@id": "https://fonolog.ru/dcp#person"
+      },
+      "description": "Индивидуальные и небольшие групповые занятия для детей с ДЦП, заиканием и другими речевыми нарушениями. Включает диагностику, индивидуальную программу, дыхательные и артикуляционные упражнения, игровые задания и рекомендации для родителей.",
+      "areaServed": "Россия",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Дети от 5 лет; родители"
+      },
+      "termsOfService": "Занятия онлайн и офлайн (по договорённости). Гибкий график.",
+      "url": "https://fonolog.ru/dcp#service"
+    },
+    {
+      "@type": "Offer",
+      "@id": "https://fonolog.ru/dcp#offer-basic",
+      "itemOffered": {
+        "@id": "https://fonolog.ru/dcp#service"
+      },
+      "priceCurrency": "RUB",
+      "price": "800",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "priceCurrency": "RUB",
+        "price": "800",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": 1,
+          "unitCode": "HRS"
+        }
+      },
+      "availability": "https://schema.org/InStock",
+      "url": "https://fonolog.ru/dcp/contact",
+      "validFrom": "2025-01-01"
+    },
+    {
+      "@type": "AggregateRating",
+      "@id": "https://fonolog.ru/dcp#rating",
+      "ratingValue": "4.8",
+      "reviewCount": "24",
+      "bestRating": "5",
+      "worstRating": "1",
+      "itemReviewed": {
+        "@id": "https://fonolog.ru/dcp#service"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://fonolog.ru/dcp#review1",
+      "author": {
+        "@type": "Person",
+        "name": "Марина"
+      },
+      "datePublished": "2025-07-10",
+      "reviewBody": "Наш сын стал увереннее в речи и реже заикаться. Большая работа на дому — и заметный результат.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "itemReviewed": {
+        "@id": "https://fonolog.ru/dcp#service"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://fonolog.ru/dcp/#review2",
+      "author": {
+        "@type": "Person",
+        "name": "Ольга"
+      },
+      "datePublished": "2025-05-21",
+      "reviewBody": "Татьяна Павловна — очень терпеливый специалист, занятия проходят в тёплой атмосфере.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "itemReviewed": {
+        "@id": "https://fonolog.ru/dcp/#service"
+      }
+    }
+  ]
+}
+</script>
   <!-- Open Graph -->
   <meta property="og:title" content="Понякова Татьяна Павловна — педагог и логопед">
   <meta property="og:description" content="Индивидуальные занятия и коррекция речи для детей с особенностями развития — ДЦП, заикание и др.">
@@ -76,6 +197,7 @@
 
     }
   </style>
+  <link rel="shortcut icon" href="public/site/img/logo.png" type="image/x-icon">
 </head>
 <body>
   <div class="container">
