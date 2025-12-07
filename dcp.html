@@ -23,7 +23,7 @@
     .container{max-width:1100px;margin:0 auto;padding:28px}
 
     /* Header */
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap-reverse;}
     .logo{display:flex;gap:12px;align-items:center}
     .logo .mark{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
     nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
@@ -68,10 +68,12 @@
     footer{margin-top:28px;padding:20px 0;color:var(--muted);text-align:center}
 
     @media (max-width:900px){
+        .hero-card{padding:0;}
       .hero{grid-template-columns:1fr;}
       .grid{grid-template-columns:1fr}
       .contact{grid-template-columns:1fr}
       .method{flex-direction:column}
+
     }
   </style>
 </head>
