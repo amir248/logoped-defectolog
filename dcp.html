@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Понякова Татьяна Павловна — занятия для детей с ДЦП и заиканием</title>
+  <meta name="description" content="Индивидуальные и групповые занятия английским языком и коррекционная работа для детей с ДЦП, заиканием и речевыми нарушениями. Мягкая авторская методика.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Понякова Татьяна Павловна — педагог и логопед">
+  <meta property="og:description" content="Индивидуальные занятия и коррекция речи для детей с особенностями развития — ДЦП, заикание и др.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root{--bg:#f8fafc;--card:#ffffff;--accent:#4f46e5;--muted:#6b7280;--glass: rgba(255,255,255,0.6)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:linear-gradient(180deg,#fbfdff 0%,#f1f5f9 100%); color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .hero-card{background:var(--card);border-radius:18px;padding:36px;box-shadow:0 10px 30px rgba(15,23,42,0.06)}
+    h1{font-size:32px;margin:0 0 10px}
+    .lead{color:var(--muted);line-height:1.5;margin-bottom:18px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.secondary{background:transparent;border:2px solid #e6e9ff;color:var(--accent);font-weight:700}
+
+    .profile{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .avatar{width:180px;height:180px;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px rgba(15,23,42,0.08);display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#f3f4ff)}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .tag{background:linear-gradient(90deg,#eef2ff,#fbe7ff);padding:8px 12px;border-radius:999px;font-weight:600;color:var(--accent)}
+
+    /* Grid sections */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+    .card h3{margin:8px 0 6px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Method section */
+    .method{display:flex;gap:18px;margin-top:22px}
+    .method .text{flex:1}
+    .method .steps{width:320px}
+    .step{background:linear-gradient(180deg,#fff,#fbfdff);padding:12px;border-radius:10px;margin-bottom:10px}
+
+    /* Testimonials */
+    .testimonials{margin-top:20px}
+    blockquote{margin:0;padding:16px;border-left:4px solid #e6e9ff;background:#fff;border-radius:8px}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:24px}
+    form{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.04)}
+    label{display:block;font-weight:600;margin-bottom:6px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-bottom:12px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:28px;padding:20px 0;color:var(--muted);text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .method{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">ТП</div>
+        <div>
+          <div style="font-weight:800">Понякова Татьяна Павловна</div>
+          <div style="font-size:13px;color:var(--muted)">Преподаватель, коррекционный педагог, логопед</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">О преподавателе</a>
+        <a href="#method">Методика</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <div class="tag">Индивидуальный подход</div>
+        <h1>Занятия для детей с ДЦП, заиканием и речевыми нарушениями</h1>
+        <p class="lead">Мягкая авторская методика Татьяны Павловны помогает детям развивать речь, преодолевать страхи и уверенно общаться на русском и английском языках. Индивидуальные программы для каждого ребёнка.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Записаться на занятие</a>
+          <a class="btn secondary" href="#method">Узнать методику</a>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:18px;align-items:center">
+          <div class="muted">Формат занятий:</div>
+          <div class="tag">Онлайн</div>
+          <div class="tag">Офлайн — по договорённости</div>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:18px">
+          <div style="flex:1">
+            <h4 style="margin:6px 0">Возраст</h4>
+            <div class="muted">от 5 лет, подготовка к школе, начальная школа</div>
+          </div>
+          <div style="flex:1">
+            <h4 style="margin:6px 0">Продолжительность</h4>
+            <div class="muted">30–60 минут (по программе)</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card profile">
+        <div class="avatar">
+          <!-- Placeholder SVG avatar -->
+          <!-- <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="220" height="220" rx="20" fill="#eef2ff"/>
+            <g transform="translate(36,34)">
+              <circle cx="74" cy="50" r="34" fill="#fff" stroke="#e9efff"/>
+              <rect x="10" y="100" width="128" height="56" rx="12" fill="#fff" stroke="#e9efff"/>
+            </g>
+          </svg> -->
+          <picture>
+            <img src="photo/3.jpeg" alt="Татьяна Павловна">
+          </picture>
+        </div>
+        <div style="font-weight:700">Понякова Татьяна Павловна</div>
+        <div class="muted">Коррекционный педагог, логопед, преподаватель английского языка</div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <a class="btn" href="#contact">Запись</a>
+          <a class="btn secondary" href="mailto:tat1986@mail.ru">Написать</a>
+          
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="grid" aria-labelledby="about-title">
+      <div class="card">
+        <h3 id="about-title">О преподавателе</h3>
+        <p class="muted">Татьяна Павловна имеет многолетний опыт работы с детьми с особенностями развития: ДЦП, заикание, задержки речевого развития и другие речевые нарушения. Спокойная манера общения, терпение и чуткость — основа её подхода.</p>
+      </div>
+      <div class="card">
+        <h3>Ключевые навыки</h3>
+        <ul class="muted">
+          <li>Индивидуальные коррекционные программы</li>
+          <li>Игровые и коммуникативные методики</li>
+          <li>Работа с заиканием: упражнения на дыхание и плавность речи</li>
+          <li>Английский язык для детей с ограниченными возможностями</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Подход</h3>
+        <p class="muted">Никакого давления: занятие строится на доверии, положительном подкреплении и постепенных успехах. Родителям даются понятные инструкции для домашних занятий.</p>
+      </div>
+    </section>
+
+    <section id="method" class="method">
+      <div class="text">
+        <h2>Методика работы</h2>
+        <p class="muted">Авторская методика сочетает речевые упражнения, дыхательные практики, артикуляционные тренировки и игровые формы обучения. Цель — снизить тревогу, увеличить словарный запас и развить навыки общения.</p>
+        <h4 style="margin-top:12px">Что включает программа</h4>
+        <ul class="muted">
+          <li>Диагностика начального уровня и потребностей ребёнка</li>
+          <li>Индивидуальный план занятий</li>
+          <li>Тренировки плавности речи при заикании</li>
+          <li>Работа с моторикой и дыханием при ДЦП</li>
+          <li>Игровые задания на развитие речи и взаимодействия</li>
+        </ul>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <strong>Шаг 1.</strong> Первичная консультация — 30 мин (диагностика и план).
+        </div>
+        <div class="step">
+          <strong>Шаг 2.</strong> Индивидуальная программа — 1–2 занятия в неделю.
+        </div>
+        <div class="step">
+          <strong>Шаг 3.</strong> Отчёт и рекомендации родителям, домашние упражнения.
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="testimonials">
+      <h2>Услуги и форматы</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Индивидуальные занятия</h3>
+          <p class="muted">Персональный план, гибкий график, фокус на речевых навыках и коммуникации.</p>
+        </div>
+        <div class="card">
+          <h3>Групповые занятия</h3>
+          <p class="muted">Небольшие группы для развития общения, осторожный подбор по возможностям детей.</p>
+        </div>
+        <div class="card">
+          <h3>Онлайн-консультации</h3>
+          <p class="muted">Удобно для семей в других городах, занятия через Zoom/Skype с поддержкой родителей.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:18px">Отзывы</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+        <blockquote>
+          "Наш сын стал увереннее в речи и реже заикаться. Большая работа на дому — и заметный результат."<br><span class="muted">— Марина, мама</span>
+        </blockquote>
+        <blockquote>
+          "Татьяна Павловна — очень терпеливый специалист, занятия проходят в тёплой атмосфере."<br><span class="muted">— Ольга, мама</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div>
+        <h2>Запись и контакты</h2>
+        <p class="muted">Оставьте заявку — я свяжусь в течение дня. Укажите удобное время и формат (онлайн/офлайн).</p>
+        <form action="mailto:tat1986@mail.ru" method="post" enctype="text/plain">
+          <label for="name">Имя ребёнка / родителя</label>
+          <input id="name" name="name" placeholder="Иван Иванов" required>
+
+          <label for="age">Возраст</label>
+          <input id="age" name="age" placeholder="6" required>
+
+          <label for="format">Формат</label>
+          <select id="format" name="format">
+            <option>Онлайн</option>
+            <option>Офлайн</option>
+          </select>
+
+          <label for="message">Краткая информация о затруднениях</label>
+          <textarea id="message" name="message" rows="4" placeholder="Заикание, ДЦП, особенности развития..." required></textarea>
+
+          <button class="btn" type="submit">Отправить заявку</button>
+          <div class="small" style="margin-top:8px">Или напишите на <a href="mailto:tat1986@mail.ru">tat1986@mail.ru</a></div>
+        </form>
+      </div>
+
+      <aside class="card">
+        <h3>Контактная информация</h3>
+        <p class="muted"><strong>Телефон:</strong> <a href="tel:+79893619813">+79893619813</a></p>
+        <p class="muted"><strong>Email:</strong> <a href="mailto:tat1986@mail.ru">tat1986@mail.ru</a></p>
+        <p class="muted"><strong>Город:</strong> Санкт-Петербург</p>
+        <p class="muted"><a href="https://wa.me/+79893619813">WhatsApp</a></p>
+
+        <div style="margin-top:12px">
+          <h4>Цена</h4>
+          <p class="muted">От 800 руб. — уточняйте формат и длительность занятия.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Понякова Т.П. — Все права защищены
+    </footer>
+  </div>
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Понякова Татьяна Павловна",
+    "jobTitle": "Коррекционный педагог, логопед, преподаватель английского",
+    "description": "Индивидуальные и групповые занятия для детей с ДЦП, заиканием и речевыми нарушениями. Мягкая авторская методика.",
+    "email": "mailto:example@domain.com",
+    "telephone": "+7-000-000-0000",
+    "areaServed": "Россия"
+  }
+  </script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
